@@ -1,11 +1,19 @@
 body{
     background-color: #f1f1f1;
+    font-size: 1.0rem;
+    width: 100%;
+    margin: auto;
 
+}
+html{
+    font-size: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 
 footer {
-    position: fixed;
+    position:fixed;
     bottom: 0;
     background-color:rgb(8, 87, 235);
     color: rgb(248, 248, 248);
@@ -22,7 +30,7 @@ footer {
 }
 .col-sm-4{
     margin-top: 45px;
-    display: inline-block;
+    
 
 }
 .col-sm-4 h3{
@@ -35,11 +43,7 @@ footer {
     width:230px; 
     background: blue;
 }
-.col-sm-5{
-    
-    float:right;
-   
-}
+
 .container{
     margin-left: 110px;
     
@@ -53,4 +57,21 @@ footer {
 }
 .logos p{
     display: inline-block;
+}
+.col-sm-4 butto2{
+
+margin-top: 25px;
+}
+.logos img{
+    max-width: 100%;
+    display:table-cell;
+    float: left;
+}
+.logos p{
+    display:table-cell;
+    float: left;
+    
+    margin-top: 15px;
+  
+    
 }

@@ -8,8 +8,8 @@ server.get("/", (req,res)=>{
     res.sendFile(__dirname + "/src/index.html")
     
 })
-http.createServer (server).listen(4000, () => {
-    console.log("servidor rodando em http://localhost:4000")
 
+const PORT = process.env.PORT|| 4000;
+server.listen(PORT,() =>{
+    console.log("listening on port" + PORT);
 })
-
