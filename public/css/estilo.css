@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root {
     --main-blue: #0077B6;
-    --main-blue-hover: #005d8f;
+    
     --secundary-blue: #6DA5C2;
-    --secundary-blue-hover: #578297;
+    
 }
 
 * {
@@ -24,6 +24,7 @@ body {
     font-size: 1.6rem;
     width: 100%;
     margin: auto;
+    background-color: white;
 }
 
 html,
@@ -33,10 +34,20 @@ body {
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
 }
-header .title{
-    color: white;
-    font-family: Helvetica, sans-serif;
+.init-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70vh;
+    width: 100vw;
+    z-index: -1000;
 }
+header .brand {
+    display: flex;
+    align-items: center;
+}
+
 
 html::-webkit-scrollbar {
     width: 10px;
@@ -70,10 +81,12 @@ footer {
     right: 0;
 }
 section.initial .container .apresentation-image img {
+    
     width: 450px;
 }
 
 section.explications {
+  
     width: 90%;
     max-width: 980px;
     margin: auto;
@@ -86,7 +99,7 @@ section.explications {
 section.explications h1{
     font-family: Impact, fantasy;
     font-size: 40px;
-    color:rgb(8, 87, 235);
+    color:rgb(0, 0, 0);
 }
 
 section.explications .card {
@@ -97,6 +110,7 @@ section.explications .card {
     text-align: center;
     background-size: 100% 100%;
     border: none;
+    background-color: transparent;
 }
 
 section.explications .card-trail {
@@ -169,7 +183,32 @@ section.who-do .logos img {
 section.who-do .logos .logo-super {
     margin: 0 30px 0 30px
 }
+section.who-do {
+    display: flex;
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+}
 
+section.who-do .logos {
+    display: flex;
+    
+}
+
+section.who-do .logos img {
+    max-height: 100px;
+}
+
+section.who-do .logos .logo-super {
+    margin: 0 30px 0 30px
+}
+section.who-do .text {
+    margin-top: 16px;
+    display: inline-table;
+    
+}
 
 @media (max-width: 1024px) {
     html {
@@ -233,14 +272,35 @@ section.who-do .logos .logo-super {
     section.who-do .logos img {
         margin: 5px 10px 5px 10px;
         max-height: 120px;
+        align-items: center;
+        
     }
-  
+    section.who-do .logos img p{
+        margin-top: 50px;
+    }
+    .title2 {
+        margin-top: -50px;
+        
+        background-color:rgb(8, 87, 235);
+        color: rgb(248, 248, 248);
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        position: absolute;
+        margin-top: 25px;
+        left: -60px;
+        right: 0;
+      
+      
+   }
+   
+    
 }
 
 @media (max-width: 320px) {
     section.initial .container .apresentation-image img {
         width: 250px;
     }
+   
   
 }
 
@@ -252,4 +312,52 @@ section.who-do .logos .logo-super {
     section.initial .container .apresentation-image img {
         width: 300px;
     }
+  
+}
+ .title2 {
+     margin-left: 60px;
+    margin-top: 15px;
+    height: 40px;
+    color: white;
+   font-family: Times, Times New Roman, serif;
+   
+   
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown button{
+    border:none;
+    transition: 0s;
+}
+.dropdown button:hover{
+    background-color:  rgb(26, 143, 221);
+}
+.dropdown div{
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    z-index:1;
+    visibility: hidden;
+    position: absolute;
+    min-width: 100%;
+    opacity: 0s;
+}
+.dropdown:hover div{
+    visibility: visible;
+    opacity: 0s;
+
+}
+.dropdown div a{
+    display: block;
+    text-decoration:none ;
+    padding: 8px;
+    color: rgb(26, 143, 221);
+    transition: 0s;
+
+
+}
+.dropdown div a:hover{
+    background-color: blue;
+    color: rgb(26, 143, 221);
 }
