@@ -8,8 +8,8 @@ server.get("/", (req,res)=>{
     res.sendFile(__dirname + "/src/index.html")
     
 })
-server.get("sala", (req,res)=>{
-    res.sendFile(__dirname + "src/index_2.html")
+server.get("/src/index_2.html", (req,res)=>{
+    res.sendFile(__dirname + "/src/index_2.html")
     
 })
 const PORT = process.env.PORT|| 4000;

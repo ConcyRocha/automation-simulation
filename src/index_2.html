@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    
+    <title>sala</title>
+    <link href="index_2.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div id="container">
+        <a href="#"><button type="button" class="btn btn-link">Voltar ao Menu</button></a>
+        
+    </div>
+    
+</head>
+<body>
+<section>
+<div class="lista">
+    <ul id="lista-1">
+        <h1>Sensores</h1>
+        <li><img src="src/img/lum.jpg"></li>
+        <li><img src="img/prox1.png"></li>
+        <li><img src="img/sens2.png"></li>
+        <li><img src="img/lkjpg.jpg"></li>
+        
+        
+    </ul>
+    <ul id="lista-2">
+        <h1>Atuadores</h1>
+        <li><img src="img/inte2.png"></li>
+        <li><img src="img/sen1.png"></li>
+        <li><img src="img/23p.png"></li>
+       
+    </ul>
+    <ul id="lista-3">
+        <h1>Dispositivos</h1>
+        <li><img src="img/lok3.png"></li>
+        <li><img src="img/ar.jpg"></li>
+        <li><img src="img/lamp.png"></li>
+        
+    </ul>
+</div>
+</section>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $('#lista-1').sortable({
+            connectWith:'#lista-2'
+        });
+        $('#lista-2').sortable();
+    
+
+    </script>
+      
+</body>
+</html>
