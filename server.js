@@ -4,12 +4,12 @@ const server = express()
 
 server.use(express.static("public"))
 
-server.get("/", (req,res)=>{
+server.get("/", function(req,res){
     res.sendFile(__dirname + "/src/index.html")
     
 })
-server.get("/src/index_2.html", (req,res)=>{
-    res.sendFile(__dirname + "/src/index_2.html")
+server.get("/sala",function(req,res){
+    res.sendFile(__dirname + "/src/sala.html")
     
 })
 const PORT = process.env.PORT|| 4000;
