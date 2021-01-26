@@ -10,10 +10,14 @@
     <title>sala</title>
     
 </head>
+<style>
+    #img { width: 0px; height: 0px; padding: 0em; float: left; margin: 0px; color:transparent}
+</style>
 <body>
-    <div id="container">
-        <a href="#"><button type="button" class="btn btn-link">Voltar ao Menu</button></a>
-        <img src="img/sala1.jpeg" width = "100%" height= "100%" background-size= "cover" >  
+    <div class="lista-5">
+      <div id="li">
+         <img src="img/sala1.jpeg" >  
+      </div>
     </div>
 <section>
 <div class="lista">
@@ -35,11 +39,12 @@
     </ul>
     <ul id="lista-3">
         <h1>Dispositivos</h1>
-        <li><img src="img/lok3.png"></li>
+        <li> <img src="img/lok33.png"></li>
         <li><img src="img/ar.jpg"></li>
         <li><img src="img/lamp.png"></li>
         
     </ul>
+    <a href="#"><button type="button" class="btn btn-link">Voltar ao Menu</button></a>
 </div>
 </section>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -49,9 +54,32 @@
             connectWith:'#lista-2'
         });
         $('#lista-2').sortable();
-    
-
+        $('#lista-2').sortable({
+            connectWith:' #li img'
+        });
+        $('#li img').sortable();
+        $( function() {
+        $( "#img" ).draggable();
+         $( "#img" ).droppable({
+            drop: function( event, ui ) {
+                    $( this )
+                    .addClass( "ui" )
+      }
+    });
+  } );
+         $( "#lista-1" ).draggable();
+         $( "#lista-1" ).droppable({
+            drop: function( event, ui ) {
+                    $( this )
+                    .addClass( "ui" )
+      }
+    });
+ 
     </script>
-      
+      <div id="img" class="ui-widget-content">
+        <img src="img/lok33.png">
+        
+    </div>
+   
 </body>
 </html>

@@ -365,3 +365,20 @@ section.who-do .text {
     background-color: blue;
     color: rgb(26, 143, 221);
 }
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+[data-anime="left"]{
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"]{
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px,0px,0px);
+}
