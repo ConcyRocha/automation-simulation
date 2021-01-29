@@ -100,15 +100,13 @@ header {
 }
 
 
-header .menu a.link {
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
+header .voltar-tela a.link {
     display: flex;
-    margin-left: 20px;
-    
+    transition: 0.5s;
+    color: rgb(0, 0, 0); 
 }
 
-header .menu a.link:hover {
+header .voltar-tela a.link:hover {
     color: rgb(235, 45, 45)
 }
 
