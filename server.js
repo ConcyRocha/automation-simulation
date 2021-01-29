@@ -13,7 +13,7 @@ server.get("/sala",function(req,res){
     
 })
 server.get("/sumario",function(req,res){
-    res.sendFile(__dirname + "/d/sumario.html")
+    res.sendFile(__dirname + "/src/sumario.html")
     
 })
 const PORT = process.env.PORT|| 4000;
