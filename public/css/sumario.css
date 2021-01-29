@@ -57,9 +57,9 @@ section.content .botâo {
     margin-left: 850px;  
 }
 
-section.content .botâo a {
-    background-image: url(img/5.jpg);
-    background-color: blue;
+section.content .botâo a{
+    background-image: url(img/45.jpg);
+    background-color: rgb(0, 140, 255);
     padding: 20px;
     color: white;
     border-radius: 8px;
@@ -109,7 +109,7 @@ header .menu a.link {
 }
 
 header .menu a.link:hover {
-    color: rgb(235, 45, 193)
+    color: rgb(235, 45, 45)
 }
 
 section.content {
@@ -145,7 +145,6 @@ section.content .list ul{
     cursor: pointer;
 }
 section.content .controle a {
-    background-color: var(--main-blue);
     padding: 20px;
     color: white;
     border-radius: 8px;
@@ -162,9 +161,6 @@ section.content .controle a img {
     margin-right: 10px;
 }
 
-section.content .controle .continue:hover {
-    background-color: var(--main-blue-hover);
-}
 
 section.content {
     max-width: 1100px;
