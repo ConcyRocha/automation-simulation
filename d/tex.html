@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>j</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="text.css">
+  <style>
+  .lista-5{margin-top: 0px;  width :10vw; height: 10%; background-size:cover; }
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggabl" ).draggable();
+    $( "#droppabl" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+
+        
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+    <div class="lista-5">
+        <img src="img/sala1.jpeg" > 
+    </div>
+  <section>
+  <div class="lista">
+      <ul id="lista-1">
+          <h1>Sensores</h1>
+          <li><img src="img/lum.jpg"></li>
+          <li><img src="img/prox1.png"></li>
+          <li><img src="img/sens2.png"></li>
+          <li><img src="img/lkjpg.jpg"></li>
+          
+          
+      </ul>
+      <ul id="lista-2">
+          <h1>Atuadores</h1>
+          <li><img src="img/inte2.png"></li>
+          <li><img src="img/sen1.png"></li>
+          <li><img src="img/23p.png"></li>
+         
+      </ul>
+      <ul id="lista-3">
+        <h1>Dispositivos</h1>
+        <li><img src="img/lok3.png"></li>
+        <li><img src="img/ar.jpg"></li>
+        <li><img src="img/lamp.png"></li>
+        
+      </ul>
+<div id="draggabl" class="ui-widget-content">
+    <img src="img/lok3.png">
+    
+</div>
+<div id="draggabl" class="ui-widget-content">
+    <img src="img/lok3.png">
+    
+</div>
+<div id="draggabl" class="ui-widget-content">
+    <img src="img/lok3.png">
+    
+</div>
+ 
+ 
+<div id="droppabl" class="ui-widget-header">
+  <p>Drop here</p>
+</div>
+ 
+ 
+</body>
+</html>
