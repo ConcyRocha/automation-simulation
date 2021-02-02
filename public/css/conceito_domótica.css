@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -48,17 +48,7 @@ header .voltar-tela a.link {
 header .voltar-tela a.link:hover {
     color: rgb(235, 45, 45)
 }
-.init-back {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70vh;
-    width: 100vw;
-    z-index: -1000;
-   
-}
+
 .img-increase{
     width: 100%;
     position: absolute;
@@ -78,35 +68,19 @@ div.img-fundo {
     left: 0;
     z-index: -10000;
 }
+
 header .voltar-tela a.link {
     display: flex;
     transition: 0.5s;
     color: rgb(0, 0, 0); 
 }
-@media (max-width: 1024px) {
-    html {
-        font-size: 55%;
-    }
- 
-div.img-fundo {
-    height: 100%;
-    height: 400px;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-  
+.img{
+    width:70px;
+    color: black;
 }
-}
-section.content {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px
-}
+
+
+
 section.content {
     max-width: 1100px;
     width: 90%;
@@ -119,7 +93,6 @@ section.content {
     box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
 }
 footer {
-    
     background-color:rgb(8, 87, 235);
     color: rgb(248, 248, 248);
     text-align: center;
@@ -147,50 +120,93 @@ section.content .texts {
     margin-left: 60px;
 }
 section.content .img {
+    margin-top: 5%;
     width: 100%;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    font-size: 20px;
-    margin-left: 20%;
+    
 
 }
-section.content .botao {
-    display: flex;
-    margin-left: 850px;  
+section.content .botao a {
+  
+        background: url(img/45.jpg);
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        margin-left: 10px;
+        display: inline;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        
+        
+    
 }
 
-section.content .botao a{
-    background-image: url(img/45.jpg);
-    background-color: rgb(0, 140, 255);
-    padding: 20px;
-    color: white;
-    border-radius: 8px;
-    box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
-    transition: 0.5s;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 200px;
-    margin-bottom: 40px;
+
+
+section.content {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px 150px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px rgb(155, 155, 155);
 }
 
 section.content .botao .proximo:hover {
     background-color: rgb(14, 102, 218)
 }
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 1000px) {
+    section.content {
+        padding: 50px 50px
+    }
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 50%;
-
+    }
+    header .brand img {
+        width: 50px;
+    }
+    header {
+        justify-content: center;
+        margin-top: 25px;
+        flex-direction: column-reverse;
+    }
+    header .brand {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px
+    }
+    header .brand .title {
+        text-align: center;
+        margin: 20px 0 0 0;
     }
 }
+
+    
+
 @media (max-width: 360px) {
     html {
         font-size: 45%;
     }
     div.img-fundo{
-        height: 70vh;
+        height: 100vh;
     }
     header {
         justify-content: center;
@@ -206,13 +222,12 @@ section.content .botao .proximo:hover {
         margin-left: 60px;
     }
     section.content .img {
-        width: 100%;
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        text-align: justify;
-        font-size: 20px;
-        margin-left: 15%;
+            margin-left: -100px;
+            align-items: center;
+           
+            
+        
+        
     
     }
     section.content .botao a {
@@ -231,4 +246,18 @@ section.content .botao .proximo:hover {
         margin-bottom: 10px;
         
     }
+}
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+ 
+div.img-fundo {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+}
 }
