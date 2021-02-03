@@ -1,33 +1,31 @@
+/* Tirando todos os estilos que podem vir na pagina */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: 0;
     text-decoration: none;
-    
 }
-
+/* estilo de todo o html */
 html {
     font-size: 65.5%;
     position: relative;
     overflow-x: hidden;
 }
-
+/* estilo de todo o body */
 body {
     font-size: 1.6rem;
     width: 100%;
     margin: auto;
     
 }
-
+/* estilo de todo o body e html*/
 html,
 body {
     height: 100vh;
-    font-family: "Montserrat";
-    text-rendering: optimizelegibility;
-    -webkit-font-smoothing: antialiased;
    
 }
+/* estilo que vai ser aplicado em todo tag header*/
 header {
     width: 90%;
     max-width: 1100px;
@@ -37,8 +35,7 @@ header {
     align-items: center;
     margin-top: 30px;
 }
-
-
+/* estilo que vai ser aplicado no header na classe voltar-tela a.link  */
 header .voltar-tela a.link {
     display: flex;
     transition: 0.5s;
@@ -48,8 +45,13 @@ header .voltar-tela a.link {
 header .voltar-tela a.link:hover {
     color: rgb(235, 45, 45)
 }
-
-.img-increase{
+header .voltar-tela a.link {
+    display: flex;
+    transition: 0.5s;
+    color: rgb(0, 0, 0); 
+}
+/* estilo que vai ser aplicado na classe img-img  */
+.img-img{
     width: 100%;
     position: absolute;
     top: 0;
@@ -60,6 +62,7 @@ header .voltar-tela a.link:hover {
     z-index: -1000;
    
 }
+/* estilo que vai ser aplicado div classe .img-fundo */
 div.img-fundo {
     height: 400px;
     width: 100vw;
@@ -69,29 +72,20 @@ div.img-fundo {
     z-index: -10000;
 }
 
-header .voltar-tela a.link {
-    display: flex;
-    transition: 0.5s;
-    color: rgb(0, 0, 0); 
-}
-.img{
-    width:70px;
-    color: black;
-}
 
-
-
-section.content {
+/* estilo que vai ser aplicado na classe container  */
+section.container {
     max-width: 1100px;
     width: 90%;
     margin: auto;
     background-color: white;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 50px 50px;
+    padding: 50px 90px;
     border-radius: 10px;
     box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
 }
+/* estilo que vai ser aplicado no footer(rodapé)  */
 footer {
     background-color:rgb(8, 87, 235);
     color: rgb(248, 248, 248);
@@ -102,31 +96,34 @@ footer {
     left: 0;
     right: 0;
 }
-section.content h1 {
+/* estilo que vai ser aplicado na section container tag h1*/
+section.container h1 {
     display: flex;
     align-items: center;
     font-size: 3rem;
 }
-
-section.content h1 img {
-    margin-right: 30px;
+/* estilo que vai ser aplicado na section container na tag h1 e img*/
+section.container h1 img {
+    margin-right: 10px;
 }
-section.content .texts {
+/* estilo que vai ser aplicado na section container na class texts*/
+section.container .texts {
     margin-top: 20px;
     display: flex;
     align-items: center;
     text-align: justify;
     font-size: 20px;
-    margin-left: 60px;
+    margin-left: 90px;
 }
-section.content .img {
+/* estilo que vai ser aplicado na section container na tag img*/
+section.container .img {
     margin-top: 5%;
     width: 100%;
-    
-
+    align-items: center;
+    margin-left: 50vh;
 }
-section.content .botao a {
-  
+/* estilo que vai ser aplicado nos botões*/
+section.container .botao a {
         background: url(img/45.jpg);
         background-color: blue;
         position: relative;
@@ -141,66 +138,34 @@ section.content .botao a {
         align-items: center;
         width: 200px;
         margin-left: 0px;
-        margin-bottom: 20px;
-        
-        
-    
+        margin-bottom: 20px;  
 }
-
-
-
-section.content {
-    max-width: 1100px;
-    width: 90%;
-    margin: auto;
-    background-color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 50px 150px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 4px 1px rgb(155, 155, 155);
-}
-
-section.content .botao .proximo:hover {
+/* estilo que vai ser aplicado nos botões*/
+section.container .botao .proximo:hover {
     background-color: rgb(14, 102, 218)
 }
+/* Responsividade */
 @media (max-width: 1024px) {
     html {
         font-size: 55%;
     }
 }
-
 @media (max-width: 1000px) {
-    section.content {
+    section.container {
         padding: 50px 50px
     }
 }
-
 @media (max-width: 768px) {
     html {
         font-size: 50%;
-    }
-    header .brand img {
-        width: 50px;
     }
     header {
         justify-content: center;
         margin-top: 25px;
         flex-direction: column-reverse;
     }
-    header .brand {
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 20px
-    }
-    header .brand .title {
-        text-align: center;
-        margin: 20px 0 0 0;
-    }
+ 
 }
-
-    
-
 @media (max-width: 360px) {
     html {
         font-size: 45%;
@@ -213,7 +178,7 @@ section.content .botao .proximo:hover {
         margin-top: 25px;
         flex-direction: column-reverse;
     }
-    section.content .texts {
+    section.container .texts {
         margin-top: 20px;
         display: flex;
         align-items: center;
@@ -221,16 +186,13 @@ section.content .botao .proximo:hover {
         font-size: 10px;
         margin-left: 60px;
     }
-    section.content .img {
-            margin-left: -100px;
-            align-items: center;
-           
-            
-        
-        
-    
+    section.container .img {
+        margin-top: 5%;
+        width: 100%;
+        align-items: center;
+        margin-left: -10vh;
     }
-    section.content .botao a {
+    section.container .botao a {
         background: url(img/45.jpg);
         background-color: blue;
         position: relative;
@@ -260,4 +222,13 @@ div.img-fundo {
     left: 0;
   
 }
+}
+
+[data-anime] {
+    opacity: 9;
+    transition: 5s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(50px, 0px, 10);
 }
