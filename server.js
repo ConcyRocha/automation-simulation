@@ -13,7 +13,7 @@ server.get("/sala",function(req,res){
     
 })
 server.get("/sumario",function(req,res){
-    res.sendFile(__dirname + "src/sumario.html")
+    res.sendFile(__dirname + "/src/sumario.html")
     
 })
 server.get("/conceito_domotica",function(req,res){
