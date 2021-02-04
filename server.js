@@ -5,7 +5,7 @@ const server = express()
 server.use(express.static("public"))
 
 server.get("/", function(req,res){
-    res.sendFile(__dirname + "/src/index.html")
+    res.sendFile(__dirname + "/src/sumario.html")
     
 })
 server.get("/sala",function(req,res){
