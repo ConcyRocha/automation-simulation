@@ -141,18 +141,22 @@ section.explications .card:hover {
 
 section.explications .image {
     width: 100%;
-    padding-top: 56.25%;
+    padding-top: 57%;
     margin: 20px;
-    overflow: hidden;
+    
     position: relative;
 }
 
 section.explications .image img {
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+section.explications .text{
+    margin-top: 50px;
+    font-size: 20px;
 }
 
 
@@ -200,6 +204,7 @@ section.who-do .logos .logo-super {
 section.who-do .text {
     margin-top: 16px;
     display: inline-table;
+    font-size: 20px;
     
 }
 
