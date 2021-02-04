@@ -117,13 +117,13 @@ section.container .texts {
 }
 /* estilo que vai ser aplicado na section container na tag img*/
 section.container .img {
-    position: relative;
-    width: 300px;
-    
+    width: 400px;
+    margin-top: 2%;
+    align-items: center;
+    margin-left: 40vh;
 }
-section.container .img .img {
+section.container .img img{
     width: 100%;
-    
 }
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao a {
@@ -182,14 +182,24 @@ section.container .botao .proximo:hover {
         flex-direction: column-reverse;
     }
     section.container .texts {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
-        margin-left: 60px;
+        margin-left: 40px;
     }
- 
+    section.container .text h1 {
+        
+        font-size: 15px;
+        
+    }
+    section.container .img {
+        width: 50px;
+        margin-top: 5%;
+        align-items: center;
+    }
+    section.container .img img{
+        width: 100%;
+        margin-left: -50vh;
+    }
     section.container .botao a {
         background: url(img/45.jpg);
         background-color: blue;
@@ -206,15 +216,22 @@ section.container .botao .proximo:hover {
         margin-bottom: 10px;
         
     }
+    section.container .text img {
+        width: 20%;
+    }
+  
+}
+@media (max-width: 768px) {
     section.container .img {
-        
-        width: 200px;
-        
+        width: 300px;
+        margin-top: 5%;
+        align-items: center;
+        margin-left: 40vh;
     }
-    section.container .img .img {
+    section.container .img img{
         width: 100%;
-        
     }
+
 }
 @media (max-width: 1024px) {
     html {
@@ -230,7 +247,6 @@ div.img-fundo {
   
 }
 }
-
 [data-anime] {
     opacity: 9;
     transition: 5s;
@@ -239,3 +255,5 @@ div.img-fundo {
 [data-anime="left"] {
     transform: translate3d(50px, 0px, 10);
 }
+
+

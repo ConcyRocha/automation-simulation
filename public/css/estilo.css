@@ -400,7 +400,11 @@ header .title2{
 .image {
     animation: all 1s ease-in-out infinite alternate;
 }
+[data-anime] {
+    opacity: 50;
+    transition: 2s;
+}
 
-
-/* elementos da imagem do index */
-
+[data-anime="left"] {
+    transform: translate3d(50px, 0px, 10);
+}
