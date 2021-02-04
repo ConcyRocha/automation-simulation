@@ -117,10 +117,13 @@ section.container .texts {
 }
 /* estilo que vai ser aplicado na section container na tag img*/
 section.container .img {
-    margin-top: 5%;
+    position: relative;
+    width: 300px;
+    
+}
+section.container .img .img {
     width: 100%;
-    align-items: center;
-    margin-left: 50vh;
+    
 }
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao a {
@@ -186,12 +189,7 @@ section.container .botao .proximo:hover {
         font-size: 10px;
         margin-left: 60px;
     }
-    section.container .img {
-        margin-top: 5%;
-        width: 100%;
-        align-items: center;
-        margin-left: -10vh;
-    }
+ 
     section.container .botao a {
         background: url(img/45.jpg);
         background-color: blue;
@@ -206,6 +204,15 @@ section.container .botao .proximo:hover {
         align-items: center;
         width: 200px;
         margin-bottom: 10px;
+        
+    }
+    section.container .img {
+        
+        width: 200px;
+        
+    }
+    section.container .img .img {
+        width: 100%;
         
     }
 }
