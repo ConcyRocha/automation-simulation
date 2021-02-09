@@ -29,6 +29,8 @@ body {
     -webkit-font-smoothing: antialiased;
    
 }
+
+
 .init-back {
     width: 100%;
     position: absolute;
@@ -46,8 +48,8 @@ div.blue-background {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--background-blue);
     z-index: -10000;
+
 }
 header .brand {
     display: flex;
@@ -58,6 +60,7 @@ header .brand {
 html::-webkit-scrollbar {
     width: 10px;
     height: 10px;
+    
 }
 
 html::-webkit-scrollbar-track {
@@ -86,13 +89,11 @@ footer {
     left: 0;
     right: 0;
 }
-section.initial .container .apresentation-image img {
-    
+section.initial .container .apresentation-image img { 
     width: 450px;
 }
 
 section.explications {
-  
     width: 90%;
     max-width: 980px;
     margin: auto;
@@ -101,9 +102,11 @@ section.explications {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 30px;
     
+    
 }
 section.explications h1{
-    font-family: Impact, fantasy;
+    margin-top: 10px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
     color:rgb(0, 0, 0);
 }
@@ -167,7 +170,6 @@ section.explications  button{
     border-radius: 8px;
     color: white;
     text-align: center center;
-    box-shadow: 1px 1px 4px 1px rgb(155, 155, 155);
     transition: 0.5s;
     font-size: 15px;
 }
@@ -285,24 +287,24 @@ section.who-do .text {
     
    
 }
-header .title2{
-    font-size: 25px;
-    margin-left: 10px;
-    text-align: center;
-}
+    header .title2{
+        font-size: 25px;
+        margin-left: 10px;
+        text-align: center;
+    }
 
 
 
-.title2 {
-    font-size: 35px;
-    margin-left: 80px;
-   margin-top: 15px;
-   height: 40px;
-   color: white;
-  font-family: Times, Times New Roman, serif;
+    .title2 {
+        font-size: 35px;
+        margin-left: 80px;
+        margin-top: 15px;
+        height: 40px;
+        color: rgb(0, 0, 0);
+        font-family: Times, Times New Roman, serif;
   
   
-}
+    }
    
    
     
