@@ -135,9 +135,6 @@ section.container .botao a {
         border-radius: 8px;
         box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
         transition: 0.5s;
-        margin-left: 10px;
-        display: inline;
-        justify-content: space-around;
         align-items: center;
         width: 200px;
         margin-left: 0px;
