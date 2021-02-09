@@ -100,6 +100,7 @@ footer {
 }
 /* estilo que vai ser aplicado na section container tag h1*/
 section.container h1 {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     font-size: 3rem;
@@ -116,6 +117,7 @@ section.container .texts {
     text-align: justify;
     font-size: 20px;
     margin-left: 90px;
+    line-height: 50px;
 }
 /* estilo que vai ser aplicado na section container na tag img*/
 section.container .img {
