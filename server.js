@@ -20,6 +20,10 @@ server.get("/conceito_domotica",function(req,res){
     res.sendFile(__dirname + "/src/conceito_domotica.html")
     
 })
+server.get("/tela05",function(req,res){
+    res.sendFile(__dirname + "/src/tela05.html")
+    
+})
 const PORT = process.env.PORT|| 4000;
 server.listen(PORT,() =>{
     console.log("listening on port" + PORT);
