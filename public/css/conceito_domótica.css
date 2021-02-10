@@ -214,17 +214,9 @@ a:hover {
         padding: 50px 50px
     }
 }
-@media (max-width: 768px) {
-    html {
-        font-size: 50%;
-    }
-    header {
-        justify-content: center;
-        margin-top: 25px;
-        flex-direction: column-reverse;
-    }
+
  
-}
+
 @media (max-width: 360px) {
     html {
         font-size: 45%;
@@ -337,7 +329,7 @@ a:hover {
         margin-right: 10px;
     }
     section.container .botao a {
-        background-color: blue;
+        background-color: rgb(204, 204, 230);
         position: relative;
         padding: 10px;
         color: white;
@@ -347,9 +339,9 @@ a:hover {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-left: 190px;
+        margin-left: 100px;
         width: 200px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         
     }
 
