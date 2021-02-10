@@ -117,7 +117,7 @@ section.container .texts {
     text-align: justify;
     font-size: 20px;
     margin-left: 90px;
-    line-height: 50px;
+    line-height: 40px;
 }
 /* estilo que vai ser aplicado na section container na tag img*/
 section.container .img {
@@ -153,7 +153,7 @@ section.container .botao .proximo:hover {
     margin: auto;
     background-color: rgb(251, 251, 251);
     margin-top: 30px;
-    margin-bottom: 70px;
+    margin-bottom: -10px;
     padding: 50px 50px;
     border-radius: 10px;
     margin-left: -90px;
@@ -169,6 +169,8 @@ section.container .botao .proximo:hover {
     list-style: none;
     cursor: pointer;
     margin-left: 10px;
+    line-height: 40px;
+    
 }
 .lista_links a{
     color:		#191970;
@@ -186,14 +188,21 @@ a:hover {
 .segundo h2 {
     display: flex;
     align-items: center;
-    font-size: 3rem; 
 
 }
 .segundo h2 img{
     margin-right: 10px;
     margin-left: -20px;
 }
-
+.text1 h2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+.text1 img{
+    margin-right: 10px;
+}
 /* Responsividade */
 @media (max-width: 1024px) {
     html {
