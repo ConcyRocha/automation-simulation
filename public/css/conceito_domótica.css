@@ -208,15 +208,84 @@ a:hover {
     html {
         font-size: 55%;
     }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        margin-left: 10px;
+        display: inline;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-left: 90px;
+        margin-bottom: 0px;  
 }
-@media (max-width: 1000px) {
-    section.container {
-        padding: 50px 50px
+.container2 {
+    display: inline-block;
+    max-width: 1099px;
+    width: 124%;
+    margin: auto;
+    background-color: rgb(251, 251, 251);
+    margin-top: 30px;
+    margin-bottom: -10px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: -90px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+}
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
     }
+    header {
+        justify-content: center;
+        margin-top: 25px;
+        flex-direction: column-reverse;
+    }
+    section.container .img {
+        width: 300px;
+        margin-top: 5%;
+        align-items: center;
+        margin-left: 20vh;
+    }
+    section.container .img img{
+        width: 100%;
+    }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        margin-left: 10px;
+        display: inline;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-left: 60px;
+        margin-bottom: 0px;  
 }
-
- 
-
+.container2 {
+    display: inline-block;
+    max-width: 2000px;
+    width: 135%;
+    margin: auto;
+    background-color: rgb(251, 251, 251);
+    margin-top: 30px;
+    margin-bottom: -10px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: -90px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+}
+}
 @media (max-width: 360px) {
     html {
         font-size: 45%;
@@ -229,24 +298,40 @@ a:hover {
         margin-top: 25px;
         flex-direction: column-reverse;
     }
-    section.container .texts {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        margin-left: 40px;
+    section.container h1 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -70px;
     }
-    section.container .text h1 {
-        
-        font-size: 15px;
-        
+    section.container h2 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -70px;
+    }
+    section.container h2 img{
+        margin-right: 10px;
+        margin-left: -10px;
+    }
+    section.container .texts {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        font-size: 12px;
+        margin-left: -20px;
+        line-height: 15px;
+    }
+  
+    section.container h1 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
     }
     section.container .img {
-        width: 90px;
-        margin-top: 5%;
-        align-items: center;
-    }
-    section.container .img img{
-        width: 100%;
-        margin-left: -50vh;
+            width: 250px;
+            margin-left: -10ch;
+            align-items: center;
     }
     section.container .botao a {
         background-color: blue;
@@ -259,137 +344,30 @@ a:hover {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-left: 20px;
-        width: 200px;
-        margin-bottom: 10px;
-        
-    }
-    .container2 {
-       
-        max-width: 200px;
-        width: 90%;
-        margin: auto;
-        background-color: rgb(189, 189, 189);
-        margin-top: 40px;
-        margin-bottom: 30px;
-        padding: 50px 50px;
-        border-radius: 10px;
-        margin-left: 40px;
-        box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
-    }
-    .segundo img{
-        width: 30px;
-        margin-left: 10px;
-    }
-    .segundo h2 {
-        display: flex;
-        align-items: center;
-        font-size: 1rem; 
-    
-    }
-    .segundo h2 img{
-        margin-right: 10px;
-    }
-  
-}
-@media (max-width: 768px) {
-    section.container .img {
-        width: 300px;
-        margin-top: 5%;
-        align-items: center;
-        margin-left: 40vh;
-    }
-    section.container .img img{
-        width: 100%;
-    }
-    .container2 {
-       
-        max-width: 1900px;
-        width: 116.5%;
-        margin: auto;
-        background-color: rgb(251, 251, 251);
-        margin-top: 40px;
-        margin-bottom: 30px;
-        padding: 50px 50px;
-        border-radius: 10px;
-        margin-left: -49.5px;
-        box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
-    }
-    .segundo img{
-        width: 30px;
-        margin-left: 10px;
-    }
-    .segundo h2 {
-        display: flex;
-        align-items: center;
-        font-size: 3rem; 
-    
-    }
-    .segundo h2 img{
-        margin-right: 10px;
-    }
-    section.container .botao a {
-        background-color: rgb(204, 204, 230);
-        position: relative;
-        padding: 10px;
-        color: white;
-        border-radius: 8px;
-        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
-        transition: 0.5s;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: 100px;
         width: 200px;
         margin-bottom: 0px;
+        margin-left: -9ch;
         
     }
-
-}
-@media (max-width: 1024px) {
-    html {
-        font-size: 55%;
+    .container2 {
+        display: inline-block;
+        max-width: 2000px;
+        width: 265%;
+        margin: auto;
+        background-color: rgb(251, 251, 251);
+        margin-top: 30px;
+        margin-bottom: -10px;
+        padding: 50px 50px;
+        border-radius: 10px;
+        margin-left: -90px;
+        box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
     }
- 
-div.img-fundo {
-    height: 100%;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-  
 }
-section.container .botao a {
-    background-color: blue;
-    position: relative;
-    padding: 20px;
-    color: white;
-    border-radius: 8px;
-    transition: 0.5s;
-    align-items: center;
-    margin-left: 100px;
-    margin-bottom: 0px;  
-}
-.container2 {
-    display: inline-block;
-    max-width: 1099px;
-    width: 124.5%;
-    margin: auto;
-    background-color: rgb(251, 251, 251);
-    margin-top: 30px;
-    margin-bottom: 70px;
-    padding: 50px 50px;
-    border-radius: 10px;
-    margin-left: -90px;
-    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
-}
-}
-[data-anime] {
-    opacity: 9;
+[data-anime]{
+    opacity: 10;
     transition: 5s;
 }
-
-[data-anime="left"] {
+[data-anime = "left"]{
     transform: translate3d(50px, 0px, 10);
 }
 
