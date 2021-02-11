@@ -133,6 +133,9 @@ section.container .img {
     margin-left: 25%;
     align-items: center;
 }
+section.container .img img{
+    width: 100%;
+}
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao a {
         background-color: blue;
@@ -214,21 +217,50 @@ section.container .botao .proximo:hover {
         margin-top: 25px;
         flex-direction: column-reverse;
     }
+    section.container h1 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container h1 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -50px;
+    }
+    section.container h2 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container h2 img {
+        margin-right: 10px;
+        width: 30px;
+        margin-left: -45px;
+    }
     section.container .texts {
         margin-top: 20px;
         display: flex;
         align-items: center;
         text-align: justify;
-        font-size: 10px;
-        margin-left: 60px;
+        font-size: 12px;
+        margin-left: -20px;
+        line-height: 15px;
     }
-    .img {
-            width: 400px;
-            margin-left: 40%;
-            align-items: center;
+     .topicos {
+        margin-top: 20px;
+      
+        font-size: 12px;
+        margin-left: -20px;
+        line-height: 15px;
+    }
+    section.container .img {
+        width: 250px;
+        margin-left: -3ch;
+        align-items: center;
     }
     section.container .botao a {
-        background: url(img/45.jpg);
         background-color: blue;
         position: relative;
         padding: 10px;
@@ -240,7 +272,8 @@ section.container .botao .proximo:hover {
         justify-content: space-around;
         align-items: center;
         width: 200px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+        margin-left: 0ch;
         
     }
 }

@@ -17,8 +17,6 @@ body {
     font-size: 1.6rem;
     width: 100%;
     margin: auto;
-    
-   
 }
 /* estilo de todo o body e html*/
 html,
@@ -306,12 +304,17 @@ a:hover {
     section.container h2 img {
         margin-right: 10px;
         width: 40px;
-        margin-left: -70px;
+        margin-left: -75px;
     }
-    section.container h2 img{
+    .segundo h2 img{
         margin-right: 10px;
-        margin-left: -10px;
+        width: 10px;
+        margin-left: -75px;
     }
+    .segundo h2{
+        margin-left: 45px;
+    }
+  
     section.container .texts {
         margin-top: 20px;
         display: flex;
@@ -321,7 +324,6 @@ a:hover {
         margin-left: -20px;
         line-height: 15px;
     }
-  
     section.container h1 {
         margin-top: 50px;
         display: flex;
@@ -347,7 +349,6 @@ a:hover {
         width: 200px;
         margin-bottom: 0px;
         margin-left: -9ch;
-        
     }
     .container2 {
         display: inline-block;
