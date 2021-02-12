@@ -71,11 +71,25 @@ section.container .texts {
     margin-left: 90px;
     line-height: 40px;
 }
-section.container text h1 {
-    margin-top: 90px;
+section.container h1 {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     font-size: 3rem;
+    margin-bottom: 20px;
+}
+section.container .img img{
+    width: 100%;
+}
+.text1 h2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.text1 img{
+    margin-right: 10px;
 }
 
 .meio{
