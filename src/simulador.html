@@ -97,7 +97,7 @@
                     
                     <div class="wrapper-room">
                         <div class="droptarget"></div>
-                        <img src="img/Garagem-Luz desligada.png" class="room" data-room="garagem" />
+                        <img src="img/Garagem - Luz desligada.png" class="room" data-room="garagem" />
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
     
 </div>   
 
-<script src="https://https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
 //====================================================================================
@@ -286,7 +286,7 @@ $(document).ready(function(){
         
         //altera a imagem para o ambiente selecionado
         if(room == "garagem"){
-          $(".wrapper-room img.room").attr("src", "img/Garagem-Luz desligada.png");
+          $(".wrapper-room img.room").attr("src", "img/Garagem - Luz desligada.png");
         }else if(room == "sala"){
           $(".wrapper-room img.room").attr("src", "img/Sala-luz-desligada.png");
         }if(room == "quarto"){
@@ -437,13 +437,13 @@ function check_sensor(){
           
           //liga a lambada do ambiente atual
           if(current_room == "garagem"){
-              $(".wrapper-room img.room").attr("src", "images/room/garagem_luz_acesa.png");
+              $(".wrapper-room img.room").attr("src", "img/Garagem - Luz ligada.png");
           }else if(current_room == "sala"){
-              $(".wrapper-room img.room").attr("src", "images/room/sala_luz_acesa.png");
+              $(".wrapper-room img.room").attr("src", "img/Sala - Luz ligada e TV desligada.png");
           }if(current_room == "quarto"){
-              $(".wrapper-room img.room").attr("src", "images/room/quarto_luz_acesa.png");
+              $(".wrapper-room img.room").attr("src", "img/Quarto - Luzes ligadas e TV desligada.png");
           }if(current_room == "banheiro"){
-              $(".wrapper-room img.room").attr("src", "images/room/banheiro_luz_acesa.png");
+              $(".wrapper-room img.room").attr("src", "img/Banheiro Suíte - Luzes ligadas.png");
           }
         }else{
           //question = "You pressed Cancel!";
