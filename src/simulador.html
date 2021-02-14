@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simulador</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel='stylesheet' href='css/simulador.css' type='text/css'  />
+
+<!-- Ativa o suporte de arrastar e soltar HTML5 em dispositivos móveis (touch). -->
+<!-- Fonte: https://github.com/Bernardo-Castilho/dragdroptouch -->
+<script src="css/js.js"></script>
+
+</head>
+<body>
+    
+<div class="wrapper-main">
+    
+    <div class="wrapper-pannel">
+        <div class="row">
+            <h2>Painel de controle</h2>
+            
+            <div class="wrapper-menu">
+                <h3>Ambiente</h3>
+                <select name="select_room" id="select_room">
+                  <option value="garagem" selected>Garagem</option>
+                  <option value="sala">Sala</option>
+                  <option value="quarto">Quarto</option>
+                  <option value="banheiro">Banheiro</option>
+                </select>
+            </div>
+            
+            <div class="item" data-item="dispositivos">
+                <h3>Dispositivos</h3>
+                <div class="droptarget-device">
+                    <img draggable="true" id="televisao" src="img/televisao.png" data-device="televisao" alt="Televisão" title="Televisão">
+                    <img draggable="true" id="ar_condicionado" src="img/ar_condicionado.png" data-device="ar_condicionado" alt="Ar-Condicionado" title="Ar-Condicionado">
+                    <img draggable="true" id="lampada" src="img/lampada.png" data-device="lampada" alt="Lâmpada" title="Lâmpada">
+                </div> 
+            </div>
+            
+            <div class="wrapper-elements">
+                <div class="item" data-item="sensores">
+                    <h3>Sensores</h3>
+                    <div class="droptarget-component">
+                        <!--<img draggable="true" id="sensor_movimento" src="images/sensors/sensor_movimento.png" data-sensor="sensor_movimento" alt="Sensor de Movimento">-->
+                        <img draggable="true" id="sensor_luminosidade" src="img/sensor_luminosidade.png" data-sensor="sensor_luminosidade" alt="Sensor de Luminosidade" title="Sensor de Luminosidade">
+                        <img draggable="true" id="sensor_proximidade" src="img/sensor_proximidade.png" data-sensor="sensor_proximidade" alt="Sensor de Proximidade" title="Sensor de Proximidade">
+                        <img draggable="true" id="sensor_temperatura" src="img/sensor_temperatura.png" data-sensor="sensor_temperatura" alt="Sensor de Temperatura" title="Sensor de Temperatura">
+                    </div> 
+                </div>
+                
+                <div class="item" data-item="atuadores">
+                    <h3>Atuadores</h3>
+                    <div class="droptarget-actuator">
+                        <img draggable="true" id="atuador_rele1" src="img/rele.png" data-actuator="rele" alt="Relé">
+                        <img draggable="true" id="atuador_rele2" src="img/rele.png" data-actuator="rele" alt="Relé">
+                    </div> 
+                </div>
+                
+                <div class="item" data-item="personagens">
+                    <h3>Personagens</h3>
+                    <div class="droptarget">
+                        <img draggable="true" id="pessoa" src="img/homem.png" data-character="personagem" alt="Personagem" title="Personagem">
+                    </div> 
+                </div>
+                
+                <div class="wrapper-drag-area">
+                    <div class="wrapper-infos">
+                        <p id="info">Arraste os elementos para alguma das caixas retangulares:</p>
+                    </div>
+                        
+                    <div class="wrapper-box">
+                        <div class="item" data-item="devices">
+                            <h3>Dispositivos</h3>
+                            <div class="droptarget-device"></div>
+                            <div class="droptarget-device"></div>
+                            <div class="droptarget-device"></div>
+                        </div>
+                        
+                        <div class="item" data-item="components">
+                            <h3>Sensores</h3>
+                            <div class="droptarget-component"></div>
+                            <div class="droptarget-component"></div>
+                            <div class="droptarget-component"></div>
+                        </div>
+                        
+                        <div class="item" data-item="actuators">
+                            <h3>Atuadores</h3>
+                            <div class="droptarget-actuator"></div>
+                            <div class="droptarget-actuator"></div>
+                            <div class="droptarget-actuator"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="wrapper-room">
+                        <div class="droptarget"></div>
+                        <img src="img/Garagem-Luz desligada.png" class="room" data-room="garagem" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+</div>   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+//====================================================================================
+// FUNCIONALIDADE DRAG AND DROP
+//====================================================================================
+
+/* Acionar ao arrastar*/
+document.addEventListener("dragstart", function(event) {
+    // Método para definir o tipo de dados e arrastar os dados
+    event.dataTransfer.setData("text/plain", event.target.id);
+
+    // Exibir algum texto ao arrastar o elemento
+    document.getElementById("info").innerHTML = event.target.alt;  
+
+    // Modifica a transparência do elemento arrastado
+    event.target.style.opacity = "0.4";
+});
+
+// Ao arrastar o elemento, mude a cor do texto de saída
+document.addEventListener("drag", function(event) {
+    document.getElementById("info").style.color = "#f5e311";
+});
+
+// Ao arrastar o elemento, redefina o elemento de texto e redefina a transparência
+document.addEventListener("dragend", function(event) {
+    document.getElementById("info").innerHTML = "Arraste os elementos para alguma das caixas abaixo:";
+    event.target.style.opacity = "1";
+});
+
+// Quando o elemento é arrastado para o droptarget, mude o estilo da borda do div
+document.addEventListener("dragenter", function(event) {
+    if ( event.target.className == "droptarget-device" 
+        || event.target.className == "droptarget-component" 
+        || event.target.className == "droptarget-actuator" 
+        || event.target.className == "droptarget" ) {
+        event.target.style.border = "3px dotted red";
+    }
+});
+
+// Quando o elemento arrastável deixa o droptarget, redefina o estilo da borda do div
+document.addEventListener("dragleave", function(event) {
+    if ( event.target.className == "droptarget-device" 
+        || event.target.className == "droptarget-component" 
+        || event.target.className == "droptarget-actuator" 
+        || event.target.className == "droptarget" ) {
+        event.target.style.border = "";
+    }
+});
+
+// Por padrão, os elementos não podem ser arrastados e soltos em outros elementos. 
+// Para o drop, devemos evitar o tratamento padrão de elementos
+document.addEventListener("dragover", function(event) {
+    // isso vai cancelar qualquer ação padrão do elemento escolhido	
+    event.preventDefault();
+});
+
+//toda ver que soltar um elemento
+document.addEventListener("drop", function(event) {
+    // isso vai cancelar qualquer ação padrão do elemento escolhido	
+    event.preventDefault();
+    
+    //verifica se o elemento foi arrastado para a div que contem a classe "droptarget-device"
+    if (event.target.className == "droptarget-device") {
+        
+        //redefine o texto informativo
+        document.getElementById("info").style.color = "";
+        
+        //redefine a borda do div
+        event.target.style.border = "";
+        
+        //pega o id do elemento arrastado
+        var data = event.dataTransfer.getData("text/plain");
+        
+        //verifica se o elemento é um dispositivo 
+        if(data == "televisao"
+            || data == "ar_condicionado"
+            || data == "lampada"){
+            
+            //entao aceita o elemento    
+            event.target.appendChild(document.getElementById(data));
+        }else{
+            //se nao, exibe um alerta
+            alert("Ops! Esta área é destinada para dispositivos...");
+        }
+    }
+    //verifica se o elemento foi arrastado para a div que contem a classe "droptarget-component"
+    else if(event.target.className == "droptarget-component"){
+        
+        //redefine o texto informativo
+        document.getElementById("info").style.color = "";
+        
+        //redefine a borda do div
+        event.target.style.border = "";
+        
+        //pega o id do elemento arrastado
+        var data = event.dataTransfer.getData("text/plain");
+        
+        //verifica se o elemento é um componente 
+        if(data == "sensor_luminosidade"
+            || data == "sensor_proximidade"
+            || data == "sensor_temperatura"){
+            
+            //entao aceita o elemento    
+            event.target.appendChild(document.getElementById(data));
+        }else{
+            //se nao, exibe um alerta
+            alert("Ops! Esta área é destinada para sensores...");
+        }
+    }
+    //verifica se o elemento foi arrastado para a div que contem a classe "droptarget-actuator"
+    else if(event.target.className == "droptarget-actuator"){
+        
+        //redefine o texto informativo
+        document.getElementById("info").style.color = "";
+        
+        //redefine a borda do div
+        event.target.style.border = "";
+        
+        //pega o id do elemento arrastado
+        var data = event.dataTransfer.getData("text/plain");
+        
+        //verifica se o elemento é um componente 
+        if(data == "atuador_rele1"
+            || data == "atuador_rele2"){
+            
+            //entao aceita o elemento    
+            event.target.appendChild(document.getElementById(data));
+        }else{
+            //se nao, exibe um alerta
+            alert("Ops! Esta área é destinada para atuadores...");
+        }
+    }
+    //verifica se o elemento foi arrastado para a div que contem a classe "droptarget" (personagem)
+    else if(event.target.className == "droptarget"){
+        
+        //redefine o texto informativo
+        document.getElementById("info").style.color = "";
+        
+        //redefine a borda do div
+        event.target.style.border = "";
+        
+        //pega o id do elemento arrastado
+        var data = event.dataTransfer.getData("text/plain");
+        
+        //verifica se o elemento é um componente 
+        if(data == "pessoa"){
+            
+            //entao aceita o elemento    
+            event.target.appendChild(document.getElementById(data));
+        }else{
+            //se nao, exibe um alerta
+            alert("Ops! Esta área é destinada para personagens...");
+        }
+    }
+    
+    //verifica se algum sensor foi ativado
+    check_sensor();
+});
+
+//====================================================================================
+// REGRAS GERAIS
+//====================================================================================
+
+//inicializador padrão do jQuery, tudo que estiver aqui dentro será executado ao carregar a pagina
+$(document).ready(function(){
+    
+    //pega o ambiente atual selecionado e atribui a variavel: current_room
+    var current_room = $("#select_room").val();
+    
+    //passa o ambiente atual selecionado para uma funcao que exibe/esconde os dispositivos no painel de controle
+    devices_of_room(current_room);
+    
+    //cada vez que o ambiente for selecionado...
+    $("#select_room").on("change", function(){
+        //pega o valor atual e atribui a variavel "room"
+        var room = $(this).val();
+        
+        //altera a imagem para o ambiente selecionado
+        if(room == "garagem"){
+          $(".wrapper-room img.room").attr("src", "img/Garagem-Luz desligada.png");
+        }else if(room == "sala"){
+          $(".wrapper-room img.room").attr("src", "img/Sala-luz-desligada.png");
+        }if(room == "quarto"){
+          $(".wrapper-room img.room").attr("src", "img/quarto-luz-pagada.png");
+        }if(room == "banheiro"){
+          $(".wrapper-room img.room").attr("src", "img/Banheiro-luz-apagada.png");
+        }
+        
+        //verifica se algum sensor foi ativado
+        check_sensor();
+        
+        //passa o ambiente selecionado para uma funcao que exibe/esconde os dispositivos no painel de controle
+        devices_of_room(room);
+    });
+    
+});
+
+function devices_of_room(room){
+    //se o ambiente for = garagem
+    //exibe somente o dispositivo lampada no painel de controle
+    //esconde o sensor de temperatura
+    //exibe 1 rele
+    if(room == "garagem"){
+        //dispositivos
+        $("#televisao").hide();
+        $("#ar_condicionado").hide();
+        $("#lampada").show();
+        
+        //sensores
+        $("#sensor_luminosidade").show();
+        $("#sensor_proximidade").show();
+        $("#sensor_temperatura").hide();
+        
+        //atuadores
+         $("#atuador_rele1").show();
+         $("#atuador_rele2").hide();
+    }
+    //se o ambiente for = sala
+    //exibe todos os dispositivos no painel de controle
+    //exibe todos os sensores
+    //exibe 2 rele
+    else if(room == "sala"){
+        //dispositivos
+        $("#televisao").show();
+        $("#ar_condicionado").show();
+        $("#lampada").show();
+        
+        //sensores
+        $("#sensor_luminosidade").show();
+        $("#sensor_proximidade").show();
+        $("#sensor_temperatura").show();
+        
+        //atuadores
+         $("#atuador_rele1").show();
+         $("#atuador_rele2").show();
+    }
+    //se o ambiente for = quarto
+    //exibe todos os dispositivos no painel de controle
+    //exibe todos os sensores
+    //exibe 2 rele
+    else if(room == "quarto"){
+        //dispositivos
+        $("#televisao").show();
+        $("#ar_condicionado").show();
+        $("#lampada").show();
+        
+        //sensores
+        $("#sensor_luminosidade").show();
+        $("#sensor_proximidade").show();
+        $("#sensor_temperatura").show();
+        
+        //atuadores
+         $("#atuador_rele1").show();
+         $("#atuador_rele2").show();
+    }
+    //se o ambiente for = banheiro
+    //exibe somente o dispositivo lampada no painel de controle
+    //esconde o sensor de temperatura
+    //exibe 1 rele
+    else if(room == "banheiro"){
+        $("#televisao").hide();
+        $("#ar_condicionado").hide();
+        $("#lampada").show();
+        
+        //sensores
+        $("#sensor_luminosidade").show();
+        $("#sensor_proximidade").show();
+        $("#sensor_temperatura").hide();
+        
+        //atuadores
+         $("#atuador_rele1").show();
+         $("#atuador_rele2").hide();
+    }
+}
+
+function check_sensor(){
+    //armazena a quantidade de elementos selecionados de cada categoria (dispositivos, sensores, atuadores)
+    var qtd_devices = $(".wrapper-box .item[data-item='devices']").find(".droptarget-device img").length;
+    var qtd_components = $(".wrapper-box .item[data-item='components']").find(".droptarget-component img").length;
+    var qtd_actuators = $(".wrapper-box .item[data-item='actuators']").find(".droptarget-actuator img").length;
+    
+    //verifica qual dispositivo está selecionado
+    //se flag = 1, o elemento está selecionado...se flag = 0 o elemento não está selecionado
+    var flag_lampada = $(".wrapper-box .item[data-item='devices']").find("#lampada").length;
+    var flag_televisao = $(".wrapper-box .item[data-item='devices']").find("#televisao").length;
+    var flag_ar_condicionado = $(".wrapper-box .item[data-item='devices']").find("#ar_condicionado").length;
+    
+    //verifica qual sensor está selecionado
+    //se flag = 1, o elemento está selecionado...se flag = 0 o elemento não está selecionado
+    var flag_sensor_luminosidade = $(".wrapper-box .item[data-item='components']").find("#sensor_luminosidade").length;
+    var flag_sensor_proximidade = $(".wrapper-box .item[data-item='components']").find("#sensor_proximidade").length;
+    var flag_sensor_temperatura = $(".wrapper-box .item[data-item='components']").find("#sensor_temperatura").length;
+    
+    //verifica qual atuador está selecionado
+    //se flag = 1, o elemento está selecionado...se flag = 0 o elemento não está selecionado
+    var flag_atuador_rele1 = $(".wrapper-box .item[data-item='actuators']").find("#atuador_rele1").length;
+    var flag_atuador_rele2 = $(".wrapper-box .item[data-item='actuators']").find("#atuador_rele2").length;
+    
+    //verifica se personagem está selecionado
+    //se flag = 1, o elemento está selecionado...se flag = 0 o elemento não está selecionado
+    var flag_personagem = $(".wrapper-room .droptarget").find("#pessoa").length;
+    
+    //============================================================================================
+    
+    /*
+    ************
+    
+    SITUAÇÕES POSSÍVEIS:
+    
+    dispositivo + rele + sensor_proximidade + personagem = LIGAR
+    dispositivo + rele + sensor_proximidade + sem o personagem = DESLIGAR
+    
+    ...adicionar as demais situações
+    
+    ************
+    */
+    
+    //pega o ambiente atual selecionado e atribui a variavel: current_room
+    var current_room = $("#select_room").val();
+    
+    //aqui será feita uma verificação e validação de todas as situações possíveis para acionar os dispositivos e componentes
+    if(qtd_devices == 1 && qtd_actuators == 1 && flag_sensor_proximidade == 1 && flag_personagem == 1){
+        
+        var question;
+        var reply = confirm("A luminosidade está baixa, deseja ligar as lâmpadas?");
+        if(reply == true){
+          //question = "You pressed OK!";
+          
+          //liga a lambada do ambiente atual
+          if(current_room == "garagem"){
+              $(".wrapper-room img.room").attr("src", "images/room/garagem_luz_acesa.png");
+          }else if(current_room == "sala"){
+              $(".wrapper-room img.room").attr("src", "images/room/sala_luz_acesa.png");
+          }if(current_room == "quarto"){
+              $(".wrapper-room img.room").attr("src", "images/room/quarto_luz_acesa.png");
+          }if(current_room == "banheiro"){
+              $(".wrapper-room img.room").attr("src", "images/room/banheiro_luz_acesa.png");
+          }
+        }else{
+          //question = "You pressed Cancel!";
+        }
+        
+    }else{
+        //desliga a lambada do ambiente atual
+        if(current_room == "garagem"){
+          $(".wrapper-room img.room").attr("src", "images/room/garagem_luz_apagada.png");
+        }else if(current_room == "sala"){
+          $(".wrapper-room img.room").attr("src", "images/room/sala_luz_apagada.png");
+        }if(current_room == "quarto"){
+          $(".wrapper-room img.room").attr("src", "images/room/quarto_luz_apagada.png");
+        }if(current_room == "banheiro"){
+          $(".wrapper-room img.room").attr("src", "images/room/banheiro_luz_apagada.png");
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>

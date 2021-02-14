@@ -8,8 +8,8 @@ server.get("/", function(req,res){
     res.sendFile(__dirname + "/src/index.html")
     
 })
-server.get("/sala",function(req,res){
-    res.sendFile(__dirname + "/src/sala.html")
+server.get("/simulador",function(req,res){
+    res.sendFile(__dirname + "/src/simulador.html")
     
 })
 server.get("/Sumario",function(req,res){
