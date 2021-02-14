@@ -134,7 +134,7 @@ section.container .img {
     align-items: center;
 }
 section.container .img img{
-    width: 100%;
+    width: 50%;
 }
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao a {
@@ -256,8 +256,8 @@ section.container .botao .proximo:hover {
         line-height: 15px;
     }
     section.container .img {
-        width: 250px;
-        margin-left: -3ch;
+        width: 300px;
+        margin-left: 3ch;
         align-items: center;
     }
     section.container .botao a {

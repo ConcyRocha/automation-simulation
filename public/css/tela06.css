@@ -95,7 +95,8 @@ section.container .img img{
 .meio{
     margin-left: 10%;
     margin-top: 10px;
-    size: 10px;
+   margin-bottom: 10px;
+    
    
    
 }
@@ -173,25 +174,22 @@ section.container .img {
 }
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao a {
-        background: url(img/45.jpg);
-        background-color: blue;
-        position: relative;
-        padding: 20px;
-        color: white;
-        border-radius: 8px;
-        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
-        transition: 0.5s;
-        margin-left: 10px;
-        display: inline;
-        justify-content: space-around;
-        align-items: center;
-        width: 200px;
-        margin-left: 0px;
-        margin-bottom: 20px;  
+    background-color: blue;
+    position: relative;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+    align-items: center;
+    margin-left: 150px;
+    margin-bottom: 0px;  
 }
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao .proximo:hover {
     background-color: rgb(14, 102, 218)
+}
+section.container .img img{
+    width: 100%;
 }
 /* Responsividade */
 @media (max-width: 1024px) {
