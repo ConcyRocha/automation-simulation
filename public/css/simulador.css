@@ -35,25 +35,28 @@ body {
     background: #ffffff;
     box-shadow: 12px 8px 22px -16px rgb(15 50 86 / 32%);
     z-index: 999999999999;
-    height:100vh;
+    height:110vh;
 }
 
 .wrapper-pannel h2{
     color: #034486;
     text-transform:uppercase;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .wrapper-pannel .item{
     width:100%;
     float:left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    height:15vh;
 }
 
 .wrapper-pannel .item h3 {
     margin: 0;
     margin-bottom: 10px;
     color: #000000;
+    
+    
 }
 
 .wrapper-menu {
@@ -69,6 +72,7 @@ body {
     margin: 0;
     margin-bottom: 8px;
     color: #000000;
+    
 }
 
 .wrapper-menu select{

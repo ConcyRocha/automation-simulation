@@ -286,7 +286,7 @@ $(document).ready(function(){
         
         //altera a imagem para o ambiente selecionado
         if(room == "garagem"){
-          $(".wrapper-room img.room").attr("src", "img/Garagem - Luz desligada.png");
+          $(".wrapper-room img.room").attr("src", "img/room/Garagem - Luz desligada.png");
         }else if(room == "sala"){
           $(".wrapper-room img.room").attr("src", "img/Sala-luz-desligada.png");
         }if(room == "quarto"){
@@ -437,7 +437,7 @@ function check_sensor(){
           
           //liga a lambada do ambiente atual
           if(current_room == "garagem"){
-              $(".wrapper-room img.room").attr("src", "img/Garagem - Luz ligada.png");
+              $(".wrapper img.room").attr("src", "img/Garagem - Luz ligada.png");
           }else if(current_room == "sala"){
               $(".wrapper-room img.room").attr("src", "img/Sala - Luz ligada e TV desligada.png");
           }if(current_room == "quarto"){
