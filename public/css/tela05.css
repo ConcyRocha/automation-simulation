@@ -244,7 +244,7 @@ section.container .botao .proximo:hover {
         display: flex;
         align-items: center;
         text-align: justify;
-        font-size: 12px;
+        font-size: 20px;
         margin-left: -20px;
         line-height: 15px;
     }
