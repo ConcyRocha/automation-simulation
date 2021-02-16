@@ -62,6 +62,12 @@ header .voltar-tela a.link {
     z-index: -1000;    
 
 }
+section.container .img {
+    width: 400px;
+    margin-top: 2%;
+    align-items: center;
+    margin-left: 40vh;
+}
 section.container .texts {
     margin-top: 90px;
     display: flex;
@@ -120,8 +126,6 @@ div.img-fundo {
 }
 .subtitu2 {
     margin-left: 9%;
-    
-
 }
 
 /* estilo que vai ser aplicado na classe container  */
@@ -167,11 +171,7 @@ section.container .texts {
     margin-left: 11%;
 }
 /* estilo que vai ser aplicado na section container na tag img*/
-section.container .img {
-    margin-top: 5%;
-    width: 100%;
-    align-items: center;
-}
+
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao a {
     background-color: blue;
@@ -190,6 +190,9 @@ section.container .botao .proximo:hover {
 }
 section.container .img img{
     width: 100%;
+}
+section.container .text1 h2{
+    margin-bottom: 20px;
 }
 /* Responsividade */
 @media (max-width: 1024px) {
@@ -211,6 +214,26 @@ section.container .img img{
         margin-top: 25px;
         flex-direction: column-reverse;
     }
+    section.container .img {
+        width: 400px;
+        margin-left: 9ch;
+        align-items: center;
+        margin-bottom: 10px;
+}
+section.container .text1 h2{
+    margin-bottom: 40px;
+}
+section.container .botao a {
+    background-color: blue;
+    position: relative;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+    align-items: center;
+    margin-left: 80px;
+    margin-bottom: 0px;  
+}
  
 }
 @media (max-width: 360px) {
@@ -225,21 +248,43 @@ section.container .img img{
         margin-top: 25px;
         flex-direction: column-reverse;
     }
+    section.container h1 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container h1 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -40px;
+    }
+    section.container h2{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container h2 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -40px;
+    }
     section.container .texts {
         margin-top: 20px;
         display: flex;
         align-items: center;
         text-align: justify;
-        font-size: 10px;
-        margin-left: 60px;
+        font-size: 12px;
+        margin-left: -20px;
+        line-height: 15px;
     }
     section.container .img {
-        max-width: 100px;
-            margin-left: -100px;
-            align-items: center;
-    }
+        width: 200px;
+        margin-left: -5ch;
+        align-items: center;
+}
     section.container .botao a {
-        background: url(img/45.jpg);
         background-color: blue;
         position: relative;
         padding: 10px;
@@ -251,8 +296,8 @@ section.container .img img{
         justify-content: space-around;
         align-items: center;
         width: 200px;
-        margin-bottom: 10px;
-        
+        margin-bottom: 0px;
+        margin-left: 0ch;
     }
 }
 @media (max-width: 1024px) {
