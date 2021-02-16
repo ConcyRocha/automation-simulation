@@ -8,7 +8,7 @@ server.get("/", function(req,res){
     res.sendFile(__dirname + "/src/index.html")
     
 })
-server.get("/simulador",function(req,res){
+server.get("/home-automation-simulation-v1.0",function(req,res){
     res.sendFile(__dirname + "/home-automation-simulation-v1.0/index2.html")
     
 })
