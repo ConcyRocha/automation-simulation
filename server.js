@@ -28,6 +28,10 @@ server.get("/tela06",function(req,res){
     res.sendFile(__dirname + "/src/tela06.html")
     
 })
+server.get("/tela07",function(req,res){
+    res.sendFile(__dirname + "/src/tela07.html")
+    
+})
 server.get("/tela08",function(req,res){
     res.sendFile(__dirname + "/src/tela08.html")
     

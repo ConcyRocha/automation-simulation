@@ -1,3 +1,4 @@
+/* Tirando todos os estilos que podem vir na pagina */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,12 +17,12 @@ body {
     font-size: 1.6rem;
     width: 100%;
     margin: auto;
-    
 }
 /* estilo de todo o body e html*/
 html,
 body {
     height: 100vh;
+   
    
 }
 /* estilo que vai ser aplicado em todo tag header*/
@@ -80,7 +81,7 @@ section.container {
     background-color: white;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 50px 60px;
+    padding: 50px 90px;
     border-radius: 10px;
     box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
 }
@@ -97,6 +98,7 @@ footer {
 }
 /* estilo que vai ser aplicado na section container tag h1*/
 section.container h1 {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     font-size: 3rem;
@@ -107,74 +109,132 @@ section.container h1 img {
 }
 /* estilo que vai ser aplicado na section container na class texts*/
 section.container .texts {
-    margin-top: 0px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     text-align: justify;
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 90px;
     line-height: 40px;
 }
 /* estilo que vai ser aplicado na section container na tag img*/
-section.container .img {
-    margin-top: 5%;
-    width: 100%;
-    align-items: center;
-    margin-left: 300px;
-}
-/* estilo que vai ser aplicado nos botões*/
-section.container .botao a {
-    background-color: blue;
-    position: relative;
-    padding: 20px;
-    color: white;
-    border-radius: 8px;
-    transition: 0.5s;
-    align-items: center;
-    margin-left: 150px;
-    margin-bottom: 0px;  
-}
-section.container .img img{
-    width: 100%;
-}
 section.container .img {
     width: 400px;
     margin-top: 2%;
     align-items: center;
     margin-left: 40vh;
 }
-.text1 h2{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    
+section.container .img img{
+    width: 100%;
 }
-.text1 img{
-    margin-right: 10px;
+/* estilo que vai ser aplicado nos botões*/
+section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        transition: 0.5s;
+        align-items: center;
+        margin-left: 150px;
+        margin-bottom: 0px;  
 }
+
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao .proximo:hover {
     background-color: rgb(14, 102, 218)
 }
-div.aplicaçoes{
-    margin-left: 80px;
-    margin-top: 20px ;
+.container2 {
+    display: inline-block;
+    max-width: 1099px;
+    width: 120%;
+    margin: auto;
+    background-color: rgb(251, 251, 251);
+    margin-top: 30px;
+    margin-bottom: -10px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: -90px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
 }
-div.texto{
-    font-size: 15pt;
-    margin-left: 80px;
+.segundo h2{
+    margin-left: -20px;
+    margin-top: -50px;
+}
+
+.lista_links li{
+    margin-top: 10px;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 10px;
+    line-height: 40px;
+    
+}
+.lista_links a{
+    color:		#191970;
+    text-decoration: none;
+
+}
+a:hover {
+    color: #0000FF;
+    text-decoration: none;
+}
+.segundo img{
+    width: 45px;
+    margin-left: 10px;
+}
+.segundo h2 {
+    display: flex;
+    align-items: center;
+
+}
+.segundo h2 img{
+    margin-right: 10px;
+    margin-left: -20px;
+}
+.text1 h2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+.text1 img{
+    margin-right: 10px;
 }
 /* Responsividade */
 @media (max-width: 1024px) {
     html {
         font-size: 55%;
     }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        margin-left: 10px;
+        display: inline;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-left: 90px;
+        margin-bottom: 0px;  
 }
-@media (max-width: 1000px) {
-    section.container {
-        padding: 50px 50px
-    }
+.container2 {
+    display: inline-block;
+    max-width: 1099px;
+    width: 124%;
+    margin: auto;
+    background-color: rgb(251, 251, 251);
+    margin-top: 30px;
+    margin-bottom: -10px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: -90px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+}
 }
 @media (max-width: 768px) {
     html {
@@ -186,27 +246,43 @@ div.texto{
         flex-direction: column-reverse;
     }
     section.container .img {
-        width: 400px;
-        margin-left: 15ch;
+        width: 300px;
+        margin-top: 5%;
         align-items: center;
-        margin-bottom: 10px;
+        margin-left: 20vh;
+    }
+    section.container .img img{
+        width: 100%;
+    }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        margin-left: 10px;
+        display: inline;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-left: 60px;
+        margin-bottom: 0px;  
 }
-section.container .text1 h2{
-    margin-bottom: 40px;
+.container2 {
+    display: inline-block;
+    max-width: 2000px;
+    width: 135%;
+    margin: auto;
+    background-color: rgb(251, 251, 251);
+    margin-top: 30px;
+    margin-bottom: -10px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: -90px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
 }
-section.container .botao a {
-    background-color: blue;
-    position: relative;
-    padding: 20px;
-    color: white;
-    border-radius: 8px;
-    transition: 0.5s;
-    align-items: center;
-    margin-left: 80px;
-    margin-bottom: 0px;  
-}
- 
- 
 }
 @media (max-width: 360px) {
     html {
@@ -220,209 +296,79 @@ section.container .botao a {
         margin-top: 25px;
         flex-direction: column-reverse;
     }
-    section.container h1 {
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
-    }
     section.container h1 img {
         margin-right: 10px;
         width: 40px;
-        margin-left: -40px;
-    }
-    section.container h2{
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
+        margin-left: -70px;
     }
     section.container h2 img {
         margin-right: 10px;
         width: 40px;
-        margin-left: -40px;
+        margin-left: -75px;
     }
-    section.container .texts {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        text-align: justify;
-        font-size: 13px;
-        margin-left: -20px;
-        line-height: 15px;
-    }
-    section.container .img {
-        width: 200px;
-        margin-left: 1ch;
-        align-items: center;
-}
-    section.container .botao a {
-        background-color: blue;
-        position: relative;
-        padding: 10px;
-        color: white;
-        border-radius: 8px;
-        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
-        transition: 0.5s;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 200px;
-        margin-bottom: 0px;
-        margin-left: 0ch;
-    }
-}
-@media (max-width: 375px) {
-    html {
-        font-size: 45%;
-    }
-    div.img-fundo{
-        height: 100vh;
-    }
-    header {
-        justify-content: center;
-        margin-top: 25px;
-        flex-direction: column-reverse;
-    }
-    section.container h1 {
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
-    }
-    section.container h1 img {
+    .segundo h2 img{
         margin-right: 10px;
-        width: 40px;
-        margin-left: -40px;
+        width: 10px;
+        margin-left: -75px;
     }
-    section.container h2{
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
+    .segundo h2{
+        margin-left: 45px;
     }
-    section.container h2 img {
-        margin-right: 10px;
-        width: 40px;
-        margin-left: -40px;
-    }
-    section.container .texts {
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        text-align: justify;
-        font-size: 13px;
-        margin-left: -20px;
-        line-height: 15px;
-    }
-    section.container .img {
-        width: 200px;
-        margin-left: 1ch;
-        align-items: center;
-}
-    section.container .botao a {
-        background-color: blue;
-        position: relative;
-        padding: 10px;
-        color: white;
-        border-radius: 8px;
-        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
-        transition: 0.5s;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 200px;
-        margin-bottom: 0px;
-        margin-left: 0ch;
-    }
-
-
-}
-@media (max-width: 425px) {
-    html {
-        font-size: 45%;
-    }
-    div.img-fundo{
-        height: 100vh;
-    }
-    header {
-        justify-content: center;
-        margin-top: 25px;
-        flex-direction: column-reverse;
-    }
-    section.container h1 {
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        font-size: 3rem;
-    }
-    section.container h1 img {
-        margin-right: 10px;
-        width: 40px;
-        margin-left: -40px;
-    }
-    section.container h2{
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
-    }
-    section.container h2 img {
-        margin-right: 10px;
-        width: 40px;
-        margin-left: -40px;
-    }
-    section.container .texts {
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-        text-align: justify;
-        font-size: 16px;
-        margin-left: -20px;
-        line-height: 15px;
-    }
-    section.container .img {
-        margin-top: 20px;
-        width: 250px;
-        margin-left: 1ch;
-        align-items: center;
-}
-    section.container .botao a {
-        background-color: blue;
-        position: relative;
-        padding: 10px;
-        color: white;
-        border-radius: 8px;
-        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
-        transition: 0.5s;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 200px;
-        margin-bottom: 0px;
-        margin-left: 5ch;
-    }
-
-
-}
-@media (max-width: 1024px) {
-    html {
-        font-size: 55%;
-    }
- 
-div.img-fundo {
-    height: 100%;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
   
-}
+    section.container .texts {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        font-size: 12px;
+        margin-left: -20px;
+        line-height: 15px;
+    }
+    section.container h1 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container .img {
+            width: 250px;
+            margin-left: -10ch;
+            align-items: center;
+    }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 10px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-bottom: 0px;
+        margin-left: -9ch;
+    }
+    .container2 {
+        display: inline-block;
+        max-width: 2000px;
+        width: 265%;
+        margin: auto;
+        background-color: rgb(251, 251, 251);
+        margin-top: 30px;
+        margin-bottom: -10px;
+        padding: 50px 50px;
+        border-radius: 10px;
+        margin-left: -90px;
+        box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+    }
 }
 [data-anime]{
-    opacity: 9;
+    opacity: 10;
     transition: 5s;
 }
 [data-anime = "left"]{
-    transform: translate3d(50px, 0px, 10)
+    transform: translate3d(50px, 0px, 10);
 }
+
