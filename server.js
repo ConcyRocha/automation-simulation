@@ -28,6 +28,10 @@ server.get("/tela06",function(req,res){
     res.sendFile(__dirname + "/src/tela06.html")
     
 })
+server.get("/tela08",function(req,res){
+    res.sendFile(__dirname + "/src/tela08.html")
+    
+})
 const PORT = process.env.PORT|| 4000;
 server.listen(PORT,() =>{
     console.log("listening on port" + PORT);
