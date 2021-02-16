@@ -9,7 +9,7 @@ server.get("/", function(req,res){
     
 })
 server.get("/simulador",function(req,res){
-    res.sendFile(__dirname + "/home-automation-simulation-v1.0/sindex2.html")
+    res.sendFile(__dirname + "/home-automation-simulation-v1.0/index2.html")
     
 })
 server.get("/Sumario",function(req,res){
