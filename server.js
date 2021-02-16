@@ -9,7 +9,7 @@ server.get("/", function(req,res){
     
 })
 server.get("/index2",function(req,res){
-    res.sendFile(__dirname + "/simulador/css/index2.html")
+    res.sendFile(__dirname + "/simulador/index2.html")
     
 })
 server.get("/Sumario",function(req,res){
