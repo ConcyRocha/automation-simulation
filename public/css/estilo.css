@@ -55,6 +55,10 @@ header .brand {
     display: flex;
     align-items: center;
 }
+div.title2 h1{
+    background-color: black;
+
+}
 
 
 html::-webkit-scrollbar {
