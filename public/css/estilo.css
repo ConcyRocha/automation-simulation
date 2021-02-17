@@ -56,10 +56,25 @@ header .brand {
     align-items: center;
 }
 div.title2 h1{
-    background-color: black;
+    margin-top: 20px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color:rgb(255, 255, 255);
 
 }
+header .quem_somos a.link {
+    margin-top: -15px;
+    display: flex;
+    transition: 0.5s;
+    color: rgb(0, 0, 0); 
+    margin-left: 220vh;
+    font-size: 20px;
+    
+}
 
+header .quem_somos a.link:hover {
+    color: rgb(124, 121, 121)
+}
 
 html::-webkit-scrollbar {
     width: 10px;
@@ -213,6 +228,22 @@ section.who-do .text {
     font-size: 20px;
     
 }
+@media (max-width: 1440px){
+
+    header .quem_somos a.link {
+        margin-top: 10px;
+        display: flex;
+        transition: 0.5s;
+        color: rgb(0, 0, 0); 
+        margin-left: 165vh;
+        font-size: 19px;
+        
+    }
+    
+    header .quem_somos a.link:hover {
+        color: rgb(124, 121, 121)
+    }
+}
 
 @media (max-width: 1024px) {
     html {
@@ -227,6 +258,20 @@ section.who-do .text {
     section.initial .container .button-trail {
         padding: 17px;
     }
+    header .quem_somos a.link {
+        margin-top: 10px;
+        display: flex;
+        transition: 0.5s;
+        color: rgb(0, 0, 0); 
+        margin-left: 170vh;
+        font-size: 15px;
+        
+    }
+    
+    header .quem_somos a.link:hover {
+        color: rgb(124, 121, 121)
+    }
+      
 }
 
 @media (max-width: 768px) {
@@ -247,6 +292,20 @@ section.who-do .text {
         order: -1;
         margin-bottom: 20px;
     }
+    header .quem_somos a.link {
+        margin-top: 10px;
+        display: flex;
+        transition: 0.5s;
+        color: rgb(0, 0, 0); 
+        margin-left: 110vh;
+        font-size: 10px;
+        
+    }
+    
+    header .quem_somos a.link:hover {
+        color: rgb(124, 121, 121)
+    }
+      
 }
 
 @media (max-width: 425px) {
@@ -309,6 +368,20 @@ section.who-do .text {
   
   
     }
+    header .quem_somos a.link {
+        margin-top: 35px;
+        display: flex;
+        transition: 0.5s;
+        color: rgb(255, 255, 255); 
+        margin-left: 60vh;
+        font-size: 10px;
+        
+    }
+    
+    header .quem_somos a.link:hover {
+        color: rgb(124, 121, 121)
+    }
+      
    
    
     
@@ -337,16 +410,30 @@ section.who-do .text {
         width: 100vw;
         z-index: -1000;
     }
-    .title2 {
-        font-size: 35px;
-        margin-left: 80px;
+    .title2 h1{
+     
+        margin-left: -50px;
        margin-top: 15px;
        height: 40px;
        color: white;
+       font-size: -10px;
       font-family: Times, Times New Roman, serif;
       
       
    }
+   header .quem_somos a.link {
+    margin-top: -35px;
+    display: flex;
+    transition: 0.5s;
+    color: rgb(255, 255, 255); 
+    margin-left: 47vh;
+    font-size: 10px;
+    
+}
+
+header .quem_somos a.link:hover {
+    color: rgb(124, 121, 121)
+}
   
 }
 
