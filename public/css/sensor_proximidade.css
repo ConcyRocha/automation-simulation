@@ -125,7 +125,7 @@ section.container {
     background-color: white;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 50px 60px;
+    padding: 50px 90px;
     border-radius: 10px;
     box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
 }
@@ -145,6 +145,23 @@ section.container h1 {
     display: flex;
     align-items: center;
     font-size: 3rem;
+}
+section.container .imgi {
+    
+    width: 250px;
+    margin-left: 250px;  
+   
+}
+section.container .lista_links li{
+    margin-top: 5px;
+    list-style: none;
+    margin-left: 100px;
+    line-height: 20px;
+    
+}
+section.container .imgi img{
+    width: 100%;
+   
 }
 /* estilo que vai ser aplicado na section container na tag h1 e img*/
 section.container h1 img {
@@ -199,13 +216,26 @@ section.container .text1 h2{
     margin: auto;
     background-color: rgb(251, 251, 251);
     margin-top: 30px;
-    margin-bottom: -10px;
+    margin-bottom: -400px;
     padding: 50px 50px;
     border-radius: 10px;
     margin-left: -90px;
     box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+    background-color: rgb(190, 153, 224);
 }
+.segundo h2{
+    margin-left: -20px;
+    margin-top: -50px;
+}
+.segundo h2 {
+    display: flex;
+    align-items: center;
 
+}
+.segundo h2 img{
+    margin-right: 10px;
+    margin-left: -20px;
+}
 
 /* Responsividade */
 @media (max-width: 1024px) {
