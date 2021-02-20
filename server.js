@@ -41,8 +41,8 @@ server.get("/tela09",function(req,res){
     
 })
 
-server.get("/teste2",function(req,res){
-    res.sendFile(__dirname + "/src/teste2.html")
+server.get("/sensor_proximidade",function(req,res){
+    res.sendFile(__dirname + "/src/sensor_proximidade.html")
     
 })
 const PORT = process.env.PORT|| 4000;
