@@ -49,6 +49,10 @@ server.get("/atuadores_tipos",function(req,res){
     res.sendFile(__dirname + "/src/atuadores_tipos.html")
     
 })
+server.get("/conceito_atuadores",function(req,res){
+    res.sendFile(__dirname + "/src/conceito_atuadores.html")
+    
+})
 const PORT = process.env.PORT|| 4000;
 server.listen(PORT,() =>{
     console.log("listening on port" + PORT);

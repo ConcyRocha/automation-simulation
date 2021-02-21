@@ -98,14 +98,7 @@ section.container .img img{
     margin-right: 10px;
 }
 
-.meio{
-    height: 400px;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -10000;
-}
+
 
 /* estilo que vai ser aplicado div classe .img-fundo */
 div.img-fundo {
@@ -190,9 +183,7 @@ section.container .botao a {
 section.container .botao .proximo:hover {
     background-color: rgb(14, 102, 218)
 }
-section.container .img img{
-    width: 100%;
-}
+
 section.container .text1 h2{
     margin-bottom: 20px;
 }
@@ -224,7 +215,8 @@ section.container .lista_links li{
     border-radius: 10px;
     margin-left: -90px;
     box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
-    background-color: rgb(190, 153, 224);
+    background-color: rgb(211, 209, 212);
+
 }
 .segundo h2{
     margin-left: -20px;
@@ -404,17 +396,17 @@ div.img-fundo {
     }
     .container2 {
         display: inline-block;
-        max-width: 2000px;
-        width: 133%;
+        max-width: 1099px;
+        width: 120%;
         margin: auto;
         background-color: rgb(251, 251, 251);
         margin-top: 30px;
-        margin-bottom: -50px;
+        margin-bottom: -100px;
         padding: 50px 50px;
         border-radius: 10px;
-        margin-left: -50px;
+        margin-left: -20px;
         box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
-        background-color: rgb(190, 153, 224);
+        background-color: rgb(211, 209, 212);
     }
     .text1{
         margin-left: 25px;
@@ -513,18 +505,19 @@ div.img-fundo {
     }
     .container2 {
         display: inline-block;
-        max-width: 2000px;
-        width: 150%;
+        max-width: 1099px;
+        width: 120%;
         margin: auto;
         background-color: rgb(251, 251, 251);
         margin-top: 30px;
-        margin-bottom: -50px;
+        margin-bottom: -100px;
         padding: 50px 50px;
         border-radius: 10px;
-        margin-left: -50px;
+        margin-left: -20px;
         box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
-        background-color: rgb(190, 153, 224);
+        background-color: rgb(211, 209, 212);
     }
+    
 }
 
 
