@@ -45,6 +45,10 @@ server.get("/sensor_proximidade",function(req,res){
     res.sendFile(__dirname + "/src/sensor_proximidade.html")
     
 })
+server.get("/atuadores_tipos",function(req,res){
+    res.sendFile(__dirname + "/src/atuadores_tipos.html")
+    
+})
 const PORT = process.env.PORT|| 4000;
 server.listen(PORT,() =>{
     console.log("listening on port" + PORT);
