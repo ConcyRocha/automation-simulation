@@ -63,10 +63,26 @@ header .voltar-tela a.link {
 
 }
 section.container .img {
-    width: 400px;
+    width: 100px;
     margin-top: 2%;
     align-items: center;
     margin-left: 40vh;
+}
+.imgi{
+    display: inline-block;
+    width: 15%;
+    margin-left: 60px;
+
+    
+  }
+.lista_links li{
+    margin-top: -20px;
+    display: inline-block;
+    width: 17%;
+    margin-top: 10px;
+    list-style-type: none;
+    margin-left: 70px;
+    line-height: 25px;
 }
 section.container .texts {
     margin-top: 90px;
@@ -223,7 +239,17 @@ section.container .botao a {
     margin-left: 80px;
     margin-bottom: 0px;  
 }
- 
+.imgi{
+        
+    width: 150px;
+    margin-left: 80px;
+
+    
+  }
+  .imgi{
+    
+    width: 100%;
+}
 }
 @media (max-width: 360px) {
     html {
@@ -248,6 +274,12 @@ section.container .botao a {
         width: 40px;
         margin-left: -40px;
     }
+    .lista2_links li{
+        margin-top: 10px;
+        list-style-type: none;
+        margin-left: 10px;
+        line-height: 20px;
+    }
     section.container h2{
         margin-top: 50px;
         display: flex;
@@ -259,6 +291,7 @@ section.container .botao a {
         width: 40px;
         margin-left: -40px;
     }
+    
     section.container .texts {
         margin-top: 20px;
         display: flex;
@@ -273,6 +306,108 @@ section.container .botao a {
         margin-left: -5ch;
         align-items: center;
     }
+    .imgi{
+        
+        width: 150px;
+        margin-left: 0px;
+    
+        
+      }
+      .imgi{
+        
+        width: 100%;
+       
+    
+        
+      }
+      
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 10px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-bottom: 0px;
+        margin-left: 0ch;
+        
+    }
+}
+@media (max-width: 700px) {
+    html {
+        font-size: 45%;
+    }
+    div.img-fundo{
+        height: 100vh;
+    }
+    header {
+        justify-content: center;
+        margin-top: 25px;
+        flex-direction: column-reverse;
+    }
+    section.container h1 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container h1 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -40px;
+    }
+    .lista2_links li{
+        margin-top: 10px;
+        list-style-type: none;
+        margin-left: -10px;
+        line-height: 20px;
+    }
+    section.container h2{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container h2 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -40px;
+    }
+    
+    section.container .texts {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        font-size: 12px;
+        margin-left: -20px;
+        line-height: 15px;
+    }
+    section.container .img {
+        width: 200px;
+        margin-left: -5ch;
+        align-items: center;
+    }
+    .imgi{
+        
+        width: 150px;
+        margin-left: 0px;
+    
+        
+      }
+      .imgi{
+        
+        width: 100%;
+       
+    
+        
+      }
+      
     section.container .botao a {
         background-color: blue;
         position: relative;

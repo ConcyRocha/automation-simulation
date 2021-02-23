@@ -8,8 +8,8 @@ server.get("/", function(req,res){
     res.sendFile(__dirname + "/src/index.html")
     
 })
-server.get("/index2",function(req,res){
-    res.sendFile(__dirname + "/home-automation-simulation-v1.0/index2.html")
+server.get("/index",function(req,res){
+    res.sendFile(__dirname + "/home-automation-simulation_3.0/index.html")
     
 })
 server.get("/Sumario",function(req,res){

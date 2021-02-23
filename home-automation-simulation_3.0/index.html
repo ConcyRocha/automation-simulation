@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simulador</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel='stylesheet' href='css/simulador.css' type='text/css'  />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Ativa o suporte de arrastar e soltar HTML5 em dispositivos móveis (touch). -->
+<!-- Fonte: https://github.com/Bernardo-Castilho/dragdroptouch -->
+<script src="lib/dragdroptouch/DragDropTouch.js"></script>
+
+</head>
+<body>
+    
+<div class="wrapper-main">
+    
+    <div class="wrapper-pannel">
+        <div class="row">
+            <a href="#home">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i> Voltar ao menu    
+            </a>
+            
+            <h2>Painel de controle</h2>
+            
+            <div class="wrapper-menu">
+                <h3>Ambiente</h3>
+                <select name="select_room" id="select_room">
+                  <option value="" selected>Escolha...</option>
+                  <option value="garagem">Garagem</option>
+                  <option value="sala">Sala</option>
+                  <option value="quarto">Quarto</option>
+                  <option value="cozinha">Cozinha</option>
+                  <option value="banheiro">Banheiro</option>
+                </select>
+            </div>
+
+            <div class="wrapper-buttons">
+                <button id="toggle-simulation" class="on">
+                    <i class="fa fa-play" aria-hidden="true"></i> Ativar simulação
+                </button>
+            </div>
+            
+            <div class="toggle-simulation">
+                <div class="item" data-item="dispositivos">
+                    <h3>Dispositivos</h3>
+                    <div class="droptarget-device">
+                        <img draggable="true" id="televisao" src="images/devices/televisao.png" data-device="televisao" alt="Televisão" title="Televisão" data-function="Ligar/Desligar">
+                        <img draggable="true" id="ar_condicionado" src="images/devices/ar_condicionado.png" data-device="ar_condicionado" alt="Ar-Condicionado" title="Ar-Condicionado" data-function="Ligar/Desligar">
+                        <img draggable="true" id="lampada" src="images/devices/lampada.png" data-device="lampada" alt="Lâmpada" title="Lâmpada" data-function="Ligar/Desligar">
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="wrapper-elements">
+                <div class="toggle-simulation">
+                    <div class="item" data-item="sensores">
+                        <h3>Sensores</h3>
+                        <div class="droptarget-component">
+                            <!--<img draggable="true" id="sensor_movimento" src="images/sensors/sensor_movimento.png" data-sensor="sensor_movimento" alt="Sensor de Movimento">-->
+                            <img draggable="true" id="sensor_luminosidade" src="images/sensors/sensor_luminosidade.png" data-sensor="sensor_luminosidade" alt="Sensor de Luminosidade" title="Sensor de Luminosidade" data-function="Detectar luminosidade">
+                            <img draggable="true" id="sensor_proximidade" src="images/sensors/sensor_proximidade.png" data-sensor="sensor_proximidade" alt="Sensor de Proximidade" title="Sensor de Proximidade" data-function="Detectar pessoa">
+                            <img draggable="true" id="sensor_temperatura" src="images/sensors/sensor_temperatura.png" data-sensor="sensor_temperatura" alt="Sensor de Temperatura" title="Sensor de Temperatura" data-function="Detectar temperatura">
+                        </div> 
+                    </div>
+                    
+                    <div class="item" data-item="atuadores">
+                        <h3>Atuadores</h3>
+                        <div class="droptarget-actuator">
+                            <img draggable="true" id="atuador_rele1" src="images/actuators/rele.png" data-actuator="rele" alt="Relé" title="Relé" data-function="Ligar até 2 dispositivos">
+                            <img draggable="true" id="atuador_rele2" src="images/actuators/rele.png" data-actuator="rele" alt="Relé" title="Relé" data-function="Ligar até 2 dispositivos">
+                        </div> 
+                    </div>
+                    
+                    <div class="item" data-item="personagens">
+                        <h3>Personagens</h3>
+                        <div class="droptarget">
+                            <img draggable="true" id="pessoa" src="images/characters/homem.png" data-character="personagem" alt="Personagem" title="Personagem">
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="wrapper-drag-area">
+                    <div class="wrapper-infos">
+                        <p id="info">Escolha um ambiente e clique no botão Ativar Simulação:</p>
+                    </div>
+                        
+                    <div class="wrapper-box">
+                        <div class="item" data-item="devices">
+                            <h3>Dispositivos</h3>
+                            <div class="droptarget-device"></div>
+                            <div class="droptarget-device"></div>
+                            <div class="droptarget-device"></div>
+                        </div>
+                        
+                        <div class="item" data-item="components">
+                            <h3>Sensores</h3>
+                            <div class="droptarget-component"></div>
+                            <div class="droptarget-component"></div>
+                            <div class="droptarget-component"></div>
+                        </div>
+                        
+                        <div class="item" data-item="actuators">
+                            <h3>Atuadores</h3>
+                            <div class="droptarget-actuator"></div>
+                            <div class="droptarget-actuator"></div>
+                            <div class="droptarget-actuator"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="wrapper-room">
+                        <div class="droptarget"></div>
+                        <img src="images/room/casa_inicio.jpg" class="room" data-room="inicio" />
+                    </div>
+                </div>
+
+                <div class="wrapper-panel-actions" style="display:none;">
+                    <div class="row">
+                        <h2>Elementos</h2>
+                    </div>
+                    <div class="wrapper-elements-actions">
+                        <div class="item-devices">
+                            <h3>Dispositivos</h3>
+                            <div class="elements-devices">
+                                <p>0</p>
+                            </div>
+                        </div>
+
+                        <div class="item-components">
+                            <h3>Componentes</h3>
+                            <div class="elements-components">
+                                <p>0</p>
+                            </div>
+                        </div>
+
+                        <div class="item-actuators">
+                            <h3>Atuadores</h3>
+                            <div class="elements-actuators">
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+</div>   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/global.js"></script>
+
+</body>
+</html>
