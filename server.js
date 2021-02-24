@@ -54,7 +54,7 @@ server.get("/conceito_atuadores",function(req,res){
     
 })
 server.get("/Tipos de sensores",function(req,res){
-    res.sendFile(__dirname + "/src/Tipos de sensores.html")
+    res.sendFile(__dirname + "/src/Tipos_de_sensores.html")
     
 })
 const PORT = process.env.PORT|| 4000;
