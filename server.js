@@ -53,6 +53,10 @@ server.get("/conceito_atuadores",function(req,res){
     res.sendFile(__dirname + "/src/conceito_atuadores.html")
     
 })
+server.get("/Tipos de sensores",function(req,res){
+    res.sendFile(__dirname + "/src/Tipos de sensores.html")
+    
+})
 const PORT = process.env.PORT|| 4000;
 server.listen(PORT,() =>{
     console.log("listening on port" + PORT);
