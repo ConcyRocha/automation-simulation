@@ -1,0 +1,584 @@
+/* Tirando todos os estilos que podem vir na pagina */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+}
+/* estilo de todo o html */
+html {
+    font-size: 65.5%;
+    position: relative;
+    overflow-x: hidden;
+}
+/* estilo de todo o body */
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: auto;
+    
+}
+/* estilo de todo o body e html*/
+html,
+body {
+    height: 100vh;
+   
+}
+/* estilo que vai ser aplicado em todo tag header*/
+header {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+/* estilo que vai ser aplicado no header na classe voltar-tela a.link  */
+header .voltar-tela a.link {
+    display: flex;
+    transition: 0.5s;
+    color: rgb(0, 0, 0); 
+}
+
+header .voltar-tela a.link:hover {
+    color: rgb(235, 45, 45)
+}
+header .voltar-tela a.link {
+    display: flex;
+    transition: 0.5s;
+    color: rgb(0, 0, 0); 
+}
+/* estilo que vai ser aplicado na classe img-img  */
+.img-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70vh;
+    width: 100vw;
+    z-index: -1000;    
+
+}
+section.container .img {
+    width: 250px;
+    margin-top: 2%;
+    align-items: center;
+    margin-left: 50vh;
+}
+.imgi{
+    margin-right: 50px;
+    display: inline-block;
+    width: 200px;
+    margin-left: 200px;
+
+    
+  }
+section.container .texts {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 90px;
+    line-height: 40px;
+}
+section.container h1 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+section.container .img img{
+    width: 100%;
+}
+.text1 h2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.text1 img{
+    margin-right: 10px;
+}
+
+.meio{
+    height: 400px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10000;
+}
+
+/* estilo que vai ser aplicado div classe .img-fundo */
+div.img-fundo {
+    height: 400px;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10000;
+}
+.text1 h2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    
+}
+.text1 img{
+    margin-right: 10px;
+}
+
+/* estilo que vai ser aplicado na classe container  */
+section.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px 90px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+}
+/* estilo que vai ser aplicado no footer(rodapé)  */
+footer {
+    background-color:rgb(8, 87, 235);
+    color: rgb(248, 248, 248);
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    position: absolute;
+    margin-top: 25px;
+    left: 0;
+    right: 0;
+}
+/* estilo que vai ser aplicado na section container tag h1*/
+section.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+/* estilo que vai ser aplicado na section container na tag h1 e img*/
+section.container h1 img {
+    margin-right: 10px;
+}
+/* estilo que vai ser aplicado na section container na class texts*/
+section.container .texts {
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 23px;
+    margin-left: 11%;
+}
+/* estilo que vai ser aplicado na section container na tag img*/
+
+/* estilo que vai ser aplicado nos botões*/
+section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        transition: 0.5s;
+        align-items: center;
+        margin-left: 150px;
+        margin-bottom: 0px;  
+}
+/* estilo que vai ser aplicado nos botões*/
+section.container .botao .proximo:hover {
+    background-color: rgb(14, 102, 218)
+}
+section.container .img img{
+    width: 100%;
+}
+section.container .text1 h2{
+    margin-bottom: 20px;
+}
+
+
+.container2 {
+    display: inline-block;
+    max-width: 1099px;
+    width: 120%;
+    margin: auto;
+    background-color: rgb(251, 251, 251);
+    margin-top: 30px;
+    margin-bottom: -90px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: -90px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+    background-color: rgb(211, 209, 212);
+}
+.segundo h2{
+    margin-left: -20px;
+    margin-top: -50px;
+}
+
+.lista_links li{
+    margin-top: 10px;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 10px;
+    line-height: 40px;
+    
+}
+.lista_links a{
+    color:		#191970;
+    text-decoration: none;
+
+}
+a:hover {
+    color: #0000FF;
+    text-decoration: none;
+}
+.segundo img{
+    width: 45px;
+    margin-left: 10px;
+}
+.segundo h2 {
+    display: flex;
+    align-items: center;
+
+}
+.segundo h2 img{
+    margin-right: 10px;
+    margin-left: -20px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        transition: 0.5s;
+        align-items: center;
+        margin-left: 120px;
+        margin-bottom: 0px;  
+    }
+    .text1 h2{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        
+    }
+}
+@media (max-width: 1000px) {
+    section.container {
+        padding: 50px 50px
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    header {
+        justify-content: center;
+        margin-top: 25px;
+        flex-direction: column-reverse;
+    }
+    section.container .img {
+        width: 400px;
+        margin-left: 9ch;
+        align-items: center;
+        margin-bottom: 10px;
+}
+    section.container .text1 h2{
+        margin-bottom: 40px;
+    }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+        transition: 0.5s;
+        align-items: center;
+        margin-left: 80px;
+        margin-bottom: 0px;  
+    }
+    section.container .imgi{
+        display: inline-block;
+        margin-left: 120px;   
+      }
+      .text1 h2{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        
+    }
+.container2 {
+    display: inline-block;
+    max-width: 2000px;
+    width: 117%;
+    margin: auto;
+    background-color: rgb(251, 251, 251);
+    margin-top: 30px;
+    margin-bottom: -100px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: -50px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+    background-color: rgb(211, 209, 212);
+}
+section.container .img {
+    width: 250px;
+    margin-left: 25ch;
+    align-items: center;
+}
+ 
+}
+@media (max-width: 360px) {
+    html {
+        font-size: 45%;
+    }
+    div.img-fundo{
+        height: 100vh;
+    }
+    header {
+        justify-content: center;
+        margin-top: 25px;
+        flex-direction: column-reverse;
+    }
+    section.container h1 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container .imgi{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;   
+      }
+      .lista_links li{
+        margin-top: 10px;
+        list-style-type: none;
+        margin-left: 20px;
+        line-height: 40px;
+        font-size: 10px;
+    }
+     
+    section.container h1 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -40px;
+    }
+    .text1 h2{
+        margin-top: -10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: -20px;
+        
+    }
+    .text1 img{
+        margin-right: 10px;
+    }
+    section.container .segundo h2{
+        margin-top: -50px;
+       
+    }
+    section.container h2{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container h2 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -10px;
+    }
+    section.container .texts {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        font-size: 12px;
+        margin-left: -20px;
+        line-height: 15px;
+    }
+    section.container .img {
+        width: 150px;
+        margin-left: 5ch;
+        align-items: center;
+    }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 10px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-bottom: 0px;
+        margin-left: 0ch;   
+    }
+    .container2 {
+        display: inline-block;
+        max-width: 1099px;
+        width: 120%;
+        margin: auto;
+        background-color: rgb(251, 251, 251);
+        margin-top: 30px;
+        margin-bottom: -100px;
+        padding: 50px 50px;
+        border-radius: 10px;
+        margin-left: -20px;
+        box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+        background-color: rgb(211, 209, 212);
+    }
+}
+@media (max-width: 700px) {
+    html {
+        font-size: 45%;
+    }
+    div.img-fundo{
+        height: 100vh;
+    }
+    header {
+        justify-content: center;
+        margin-top: 25px;
+        flex-direction: column-reverse;
+    }
+    section.container h1 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container .imgi{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;   
+      }
+      .lista_links li{
+        margin-top: 10px;
+        list-style-type: none;
+        margin-left: 20px;
+        line-height: 40px;
+        font-size: 10px;
+    }
+     
+    section.container h1 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -40px;
+    }
+    .text1 h2{
+        margin-top: -10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: -20px;
+        
+    }
+    .text1 img{
+        margin-right: 10px;
+    }
+    section.container .segundo h2{
+        margin-top: -50px;
+       
+    }
+    section.container h2{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+    section.container h2 img {
+        margin-right: 10px;
+        width: 40px;
+        margin-left: -10px;
+    }
+    section.container .texts {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        font-size: 12px;
+        margin-left: -20px;
+        line-height: 15px;
+    }
+    section.container .img {
+        width: 150px;
+        margin-left: 5ch;
+        align-items: center;
+    }
+    section.container .botao a {
+        background-color: blue;
+        position: relative;
+        padding: 10px;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 1px 1px 4px 1px rgb(236, 232, 232);
+        transition: 0.5s;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        margin-bottom: 0px;
+        margin-left: 0ch;   
+    }
+    .container2 {
+        display: inline-block;
+        max-width: 1099px;
+        width: 120%;
+        margin: auto;
+        background-color: rgb(251, 251, 251);
+        margin-top: 30px;
+        margin-bottom: -100px;
+        padding: 50px 50px;
+        border-radius: 10px;
+        margin-left: -20px;
+        box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+        background-color: rgb(211, 209, 212);
+    }
+}
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+ 
+div.img-fundo {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+}
+}
+
+[data-anime]{
+    opacity: 9;
+    transition: 10s;
+}
+[data-anime = "left"]{
+    transform: translate3d( 50px,0px,10);
+}
