@@ -49,15 +49,34 @@ server.get("/atuadores_tipos",function(req,res){
     res.sendFile(__dirname + "/src/atuadores_tipos.html")
     
 })
-server.get("/conceito_atuadores",function(req,res){
-    res.sendFile(__dirname + "/src/conceito_atuadores.html")
+server.get("/Conceito_e_tipos_de_atuadores",function(req,res){
+    res.sendFile(__dirname + "/src/Conceito_e_tipos_de_atuadores.html")
     
 })
-server.get("/Tipos de sensores",function(req,res){
+server.get("/Tipos_de_sensores",function(req,res){
     res.sendFile(__dirname + "/src/Tipos_de_sensores.html")
     
 })
+server.get("/Sensor_de_Luminosidade",function(req,res){
+    res.sendFile(__dirname + "/src/Sensor_de_Luminosidade.html")
+    
+})
+server.get("/Sensor_de_Temperatura",function(req,res){
+    res.sendFile(__dirname + "/src/Sensor_de_Temperatura.html")
+    
+})
+
+server.get("/Tipos_de_Controladores",function(req,res){
+    res.sendFile(__dirname + "/src/Tipos_de_Controladores.html")
+    
+})
+server.get("/O_que_e_um_Controlador",function(req,res){
+    res.sendFile(__dirname + "/src/O_que_e_um_Controlador.html")
+    
+})
+
 const PORT = process.env.PORT|| 4000;
 server.listen(PORT,() =>{
     console.log("listening on port" + PORT);
 })
+
