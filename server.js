@@ -74,6 +74,10 @@ server.get("/O_que_e_um_Controlador",function(req,res){
     res.sendFile(__dirname + "/src/O_que_e_um_Controlador.html")
     
 })
+server.get("/quem_somos",function(req,res){
+    res.sendFile(__dirname + "/Quem_somos/quem_somos.html")
+    
+})
 
 const PORT = process.env.PORT|| 4000;
 server.listen(PORT,() =>{
