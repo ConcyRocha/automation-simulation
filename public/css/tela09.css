@@ -25,6 +25,10 @@ body {
     height: 100vh;
    
 }
+.text6{
+    margin-left: 50px;
+    font-size: 25px;
+}
 /* estilo que vai ser aplicado em todo tag header*/
 header {
     width: 90%;
@@ -51,10 +55,10 @@ header .voltar-tela a.link {
     color: rgb(0, 0, 0); 
 }
 .text1 h3{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 90px;
     font-size: 22px;
     
 }
