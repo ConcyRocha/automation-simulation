@@ -63,11 +63,11 @@ div.title2 h1{
 
 }
 header .quem_somos a.link {
-    margin-top: -15px;
+   
     display: flex;
     transition: 0.5s;
     color: rgb(0, 0, 0); 
-    margin-left: 220vh;
+    margin-left: 1100px;
     font-size: 20px;
     
 }
@@ -228,22 +228,7 @@ section.who-do .text {
     font-size: 20px;
     
 }
-@media (max-width: 1440px){
 
-    header .quem_somos a.link {
-        margin-top: 10px;
-        display: flex;
-        transition: 0.5s;
-        color: rgb(0, 0, 0); 
-        margin-left: 190vh;
-        font-size: 20px;
-        
-    }
-    
-    header .quem_somos a.link:hover {
-        color: rgb(124, 121, 121)
-    }
-}
 
 @media (max-width: 1024px) {
     html {
@@ -262,7 +247,7 @@ section.who-do .text {
         margin-top: 10px;
         display: flex;
         transition: 0.5s;
-        color: rgb(0, 0, 0); 
+        color: hsl(0, 0%, 0%); 
         margin-left: 170vh;
         font-size: 15px;
         
