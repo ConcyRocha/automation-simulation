@@ -119,10 +119,10 @@ section.container .texts {
 }
 /* estilo que vai ser aplicado na section container na tag img*/
 section.container .img {
-    width: 400px;
+    width: 500px;
     margin-top: 2%;
     align-items: center;
-    margin-left: 40vh;
+    margin-left: 35vh;
 }
 section.container .img img{
     width: 100%;

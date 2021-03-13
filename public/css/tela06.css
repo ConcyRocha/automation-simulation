@@ -62,6 +62,12 @@ header .voltar-tela a.link {
     z-index: -1000;    
 
 }
+section.container .img2 {
+    width: 700px;
+    margin-top: 2%;
+    align-items: center;
+    margin-left: 30vh;
+}
 section.container .img {
     width: 400px;
     margin-top: 2%;
