@@ -116,12 +116,7 @@ section.container .texts {
     line-height: 40px;
 }
 /* estilo que vai ser aplicado na section container na tag img*/
-section.container .img {
-    margin-top: 5%;
-    width: 100%;
-    align-items: center;
-    margin-left: 300px;
-}
+
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao a {
     background-color: blue;
@@ -141,7 +136,7 @@ section.container .img {
     width: 250px;
     margin-top: 2%;
     align-items: center;
-    margin-left: 50vh;
+    margin-left: 60vh;
 }
 .segundo img{
     width: 45px;
