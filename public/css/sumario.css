@@ -46,7 +46,10 @@ div.img-fundo {
     left: 0;
     z-index: -10000;
 }
-
+ul p{
+    font-size: 24px;
+    line-height: 50px;
+}
 
 section.content .text {
     display: flex;

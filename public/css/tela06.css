@@ -74,6 +74,23 @@ section.container .img {
     align-items: center;
     margin-left: 40vh;
 }
+.lista_links li{
+    margin-top: 10px;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 50px;
+    line-height: 20px;
+    
+}
+.lista_links a{
+    color:		#191970;
+    text-decoration: none;
+
+}
+a:hover {
+    color: #0000FF;
+    text-decoration: none;
+}
 section.container .texts {
     margin-top: 90px;
     display: flex;
@@ -115,6 +132,37 @@ section.container .img img{
 .imag5{
     margin-left: 30%;
     margin-top: 10px;
+}
+.segundo img{
+    width: 45px;
+    margin-left: 10px;
+}
+.segundo h2 {
+    display: flex;
+    align-items: center;
+
+}
+.segundo h2 img{
+    margin-right: 10px;
+    margin-left: -20px;
+}
+.container2 {
+    display: inline-block;
+    max-width: 1099px;
+    width: 120%;
+    margin: auto;
+    background-color: rgb(251, 251, 251);
+    margin-top: 30px;
+    margin-bottom: -50px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: -60px;
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+    background-color: rgb(211, 209, 212);
+}
+.segundo h2{
+    margin-left: -20px;
+    margin-top: -50px;
 }
 
 /* estilo que vai ser aplicado div classe .img-fundo */

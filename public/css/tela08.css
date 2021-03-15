@@ -107,12 +107,12 @@ section.container h1 img {
 }
 /* estilo que vai ser aplicado na section container na class texts*/
 section.container .texts {
-    margin-top: 0px;
+    margin-top: -10px;
     display: flex;
     align-items: center;
     text-align: justify;
     font-size: 22px;
-    margin-left: 90px;
+    margin-left: 100px;
     line-height: 40px;
 }
 /* estilo que vai ser aplicado na section container na tag img*/
@@ -133,10 +133,10 @@ section.container .img img{
     width: 100%;
 }
 section.container .img {
-    width: 400px;
+    width: 500px;
     margin-top: 2%;
     align-items: center;
-    margin-left: 50vh;
+    margin-left: 40vh;
 }
 .text1 h2{
     margin-top: 50px;
@@ -152,10 +152,7 @@ section.container .img {
 section.container .botao .proximo:hover {
     background-color: rgb(14, 102, 218)
 }
-div.aplicaçoes{
-    margin-left: 80px;
-    margin-top: 20px ;
-}
+
 div.texto{
     font-size: 15pt;
     margin-left: 80px;

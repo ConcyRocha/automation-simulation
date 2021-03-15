@@ -167,8 +167,8 @@ section.container .botao .proximo:hover {
     margin-top: 10px;
     list-style: none;
     cursor: pointer;
-    margin-left: 10px;
-    line-height: 40px;
+    margin-left: 50px;
+    line-height: 30px;
     
 }
 .lista_links a{
