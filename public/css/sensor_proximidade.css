@@ -142,6 +142,12 @@ section.container h1 {
     align-items: center;
     font-size: 3rem;
 }
+.topicos{
+    margin-top: 0px;
+    margin-left: 130px;
+    font-size: 15pt;
+    line-height: 40px;
+}
 
 .imgi{
     display: inline-block;

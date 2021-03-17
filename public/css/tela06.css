@@ -110,6 +110,9 @@ section.container h1 {
 section.container .img img{
     width: 100%;
 }
+.text h1{
+    font-size: 55px;
+}
 .text1 h2{
     margin-top: 50px;
     display: flex;
@@ -236,7 +239,7 @@ section.container .botao a {
     transition: 0.5s;
     align-items: center;
     margin-left: 150px;
-    margin-bottom: 0px;  
+    margin-bottom:0px;  
 }
 /* estilo que vai ser aplicado nos botões*/
 section.container .botao .proximo:hover {

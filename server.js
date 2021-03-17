@@ -24,6 +24,10 @@ server.get("/tela05",function(req,res){
     res.sendFile(__dirname + "/src/tela05.html")
     
 })
+server.get("/tipos_atuador",function(req,res){
+    res.sendFile(__dirname + "/src/tipos_atuador.html")
+    
+})
 server.get("/tela06",function(req,res){
     res.sendFile(__dirname + "/src/tela06.html")
     
@@ -49,8 +53,8 @@ server.get("/atuadores_tipos",function(req,res){
     res.sendFile(__dirname + "/src/atuadores_tipos.html")
     
 })
-server.get("/Conceito_e_tipos_de_atuadores",function(req,res){
-    res.sendFile(__dirname + "/src/Conceito_e_tipos_de_atuadores.html")
+server.get("/Conceito_atuador",function(req,res){
+    res.sendFile(__dirname + "/src/Conceito_atuador.html")
     
 })
 server.get("/Tipos_de_sensores",function(req,res){
@@ -66,12 +70,12 @@ server.get("/Sensor_de_Temperatura",function(req,res){
     
 })
 
-server.get("/Tipos_de_Controladores",function(req,res){
-    res.sendFile(__dirname + "/src/Tipos_de_Controladores.html")
+server.get("/tipos_hw_control",function(req,res){
+    res.sendFile(__dirname + "/src/tipos_hw_control.html")
     
 })
-server.get("/O_que_e_um_Controlador",function(req,res){
-    res.sendFile(__dirname + "/src/O_que_e_um_Controlador.html")
+server.get("/hardware_controle",function(req,res){
+    res.sendFile(__dirname + "/src/hardware_controle.html")
     
 })
 server.get("/quem_somos",function(req,res){
