@@ -78,6 +78,10 @@ server.get("/hardware_controle",function(req,res){
     res.sendFile(__dirname + "/src/hardware_controle.html")
     
 })
+server.get("/tela10",function(req,res){
+    res.sendFile(__dirname + "/src/tela10.html")
+    
+})
 server.get("/quem_somos",function(req,res){
     res.sendFile(__dirname + "/Quem_somos/quem_somos.html")
     
